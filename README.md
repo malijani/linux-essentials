@@ -1,3 +1,3 @@
 # لینوکس برای همه
 
-[خواندن این کتاب](malijani.github.io/lin4e-fa)
+[خواندن این کتاب](https://malijani.github.io/lin4e-fa)
