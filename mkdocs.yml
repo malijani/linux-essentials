@@ -1,2 +1,7 @@
 site_name: لینوکس برای همه
 theme: material
+nav:
+- 'index.md'
+- 'preface.md'
+- 'contents.md'
+- 'seasons/chapter1/p1.md'
