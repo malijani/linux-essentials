@@ -1,3 +1,3 @@
-# لینوکس برای همه
+# ملزومات لینوکس
 
-[خواندن این کتاب](https://malijani.github.io/lin4e-fa)
+[خواندن این کتاب](https://malijani.github.io/linux-essentials)
