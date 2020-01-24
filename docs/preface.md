@@ -20,7 +20,7 @@
 
 1. توی [github.com](https://github.com) یه حساب کاربری بسازید.
 
-2. وارد آدرس [github.com/malijani/lin4e-fa](https://github.com/malijani/lin4e-fa) بشید و روی دکمه Fork بفشارید :‌
+2. وارد آدرس [github.com/malijani/linux-essentials](https://github.com/malijani/linux-essentials) بشید و روی دکمه Fork بفشارید :‌
 ![گرفتن یک شاخه از مخزن](./images/preface/fork_add.png)
 
 3. ابزار git و python3 و pip و virtualenv رو نصب کنید(برای پلتفورم های مختلف این ابزار ها ارائه داده شدند. متناسب با سیستم عامل خودتون عمل نصب رو انجام بدید!)
