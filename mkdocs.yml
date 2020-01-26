@@ -3,5 +3,6 @@ theme: material
 nav:
 - 'index.md'
 - 'preface.md'
+- 'help_us.md'
 - 'contents.md'
 - 'seasons/chapter1/p1.md'
