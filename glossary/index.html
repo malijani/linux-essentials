@@ -36,7 +36,7 @@
     
     
       
-        <title>مشارکت در نوشتن کتاب - ملزومات لینوکس</title>
+        <title>واژه نامه - ملزومات لینوکس</title>
       
     
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                مشارکت در نوشتن کتاب
+                واژه نامه
               
             </span>
           
@@ -192,56 +192,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        مشارکت در نوشتن کتاب
-      </label>
-    
-    <a href="./" title="مشارکت در نوشتن کتاب" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../help_us/" title="مشارکت در نوشتن کتاب" class="md-nav__link">
       مشارکت در نوشتن کتاب
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">فهرست موضوعات</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    کمک مالی
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    کمک عملی
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -273,11 +228,20 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../glossary/" title="واژه نامه" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="واژه نامه" class="md-nav__link md-nav__link--active">
       واژه نامه
     </a>
+    
   </li>
 
     
@@ -298,29 +262,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">فهرست موضوعات</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    کمک مالی
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    کمک عملی
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -332,95 +273,9 @@
               
                 
                 
-                <h1 id="_1">مشارکت در نوشتن کتاب</h1>
-<p>به راحتی و روش های مختلف میتونید کمک کنید!:</p>
-<h4 id="_2"><a href="https://idpay.ir/lin4e-donation">کمک مالی</a></h4>
-<h4 id="_3">کمک عملی</h4>
-<ul>
-<li>
-<p>توی <a href="https://github.com">github.com</a> یه حساب کاربری بسازید.</p>
-</li>
-<li>
-<p>وارد آدرس <a href="https://github.com/malijani/linux-essentials">github.com/malijani/linux-essentials</a> بشید و روی دکمه Fork بفشارید :‌
-<img alt="گرفتن یک شاخه از مخزن" src="../images/preface/fork_add.png" /></p>
-</li>
-<li>
-<p>ابزار git و python3 و pip و virtualenv رو نصب کنید(برای پلتفورم های مختلف این ابزار ها ارائه داده شدند. متناسب با سیستم عامل خودتون عمل نصب رو انجام بدید!)</p>
-<ol>
-<li>نصب ابزار git : ابزار رو از <a href="https://git-scm.com/downloads">اینجا</a>دانلود و نصب کنید.</li>
-<li>نصب python : آخرین نسخه رو از <a href="https://www.python.org/downloads/">اینجا</a> دانلود و نصب کنید(هنگام نصب گزینه فعال سازی pip رو هم بزنید)</li>
-<li>نصب virtualenv : کافیه دستور زیر رو برای نصب virtualenv بزنید :</li>
-</ol>
-</li>
-</ul>
-<div dir="ltr"><code>pip install virtualenv</code></div>
-
-<ul>
-<li>دستور زیر رو اجرا کنید(به جای YOUR_USERNAME نام کاربری گیتهاب خودتون رو بذارید):</li>
-</ul>
-<div dir="ltr"><code>git clone https://github.com/YOUR_USERNAME/lin4e-fa</code></div>
-
-<ul>
-<li>به lin4e-fa تغییر مسیر بدید و  محیط مجازی توسعه پایتون رو بسازید(<a href="https://virtualenv.pypa.io/en/latest/userguide/">راهنمای virtualenv</a>) :</li>
-</ul>
-<div dir="ltr"><code>cd lin4e-fa</code></div>
-
-<div dir="ltr"><code>virtualenv -p python3 .venv</code></div>
-
-<ul>
-<li>محیط مجازی رو فعال کنید :</li>
-</ul>
-<div dir="ltr">
-    <span dir="ltr">Windows :<code>.venv\Scripts\activate</code></span><br/>
-    <span dir="ltr">Linux:<code>source ./.venv/bin/activate</code></span>
-</div>
-
-<ul>
-<li>ابزار های مورد نیاز پروژه رو در حالی که محیط مجازی پایتون فعال هست رو به کمک pip نصب کنید:</li>
-</ul>
-<div dir="ltr"><code>pip install -r requirements.txt</code></div>
-
-<ul>
-<li>حالا که محیط توسعه آمادست؛ فقط کافیه تم استفاده شده برای پروژه رو برای راست چین کانفیگ کنید:</li>
-</ul>
-<div dir="ltr">file path : <b>.venv/lib/python3.6/site-packages/material/mkdocs_theme.yml</b></div>
-
-<p>فایل بالا رو با یک ویرایشگر متن باز کنید و متغیر های زیر رو مقدار دهی کنید :</p>
-<div dir="ltr">
-    <code>language: fa</code><br>
-    <code>direction: rtl</code>
-</div>
-
-<ul>
-<li>برای تغییراتی که قصد اعمال اونها رو دارید یه شاخه جدید توی مخزن بسازید و توی اون کار کنید که با شاخه اصلی قاطی نشه:</li>
-</ul>
-<div dir="ltr"><code>git checkout -b USERNAME-changes</code></div>
-
-<ul>
-<li>سرور داخلی mkdocs رو برای توسعه و ویرایش راه اندازی کنید :</li>
-</ul>
-<div dir="ltr"><code>mkdocs serve</code></div>
-
-<ul>
-<li>
-<p>حالا کافیه محتویات درون مسیر docs رو با markdown ویرایش کنید و تغییرات رو به صورت زنده در مسیر localhost:8000 مشاهده کنید.</p>
-</li>
-<li>
-<p>پس از انجام تغییرات دلخواهتون کافیه به کمک git اونا رو ذخیره کنید و به مخزن روی سرور گیتهابتون که از مخزن اصلی فرستاده شده بفرستید:</p>
-</li>
-</ul>
-<div dir="ltr"><code>git add .</code></div>
-
-<div dir="ltr"><code>git commit -m "Changed FILE Fixed ISSUE"</code></div>
-
-<div dir="ltr"><code>git push -u origin USERNAME-changes</code></div>
-
-<ul>
-<li>وارد حساب کاربری گیتهاب و مخزن فورک شده lin4e-fa بشید ؛ حالا روی دکمه New pull request بزنید ، موضوع تغییرات رو تعیین کنید و برای اون ها توضیحاتی بیارید و دکمه Create pull request رو بزنید تا ایجاد بشه:
-<img alt="ایجاد pull request" src="../images/preface/pull_request.png" />
-(مثالی برای انتخاب موضوع و توضیحات):
-<img alt="ساخت pull request" src="../images/preface/create_pull_request.png" /></li>
-</ul>
+                <h1 id="_1">واژه نامه</h1>
+<p>سیستم عامل: Operating System به اختصار OS
+هسته سیستم عامل: Kernel (که در سیستم عامل گنو/لینوکس، لینوکس هسته است.)</p>
                 
                   
                 
@@ -442,7 +297,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../preface/" title="مقدمه" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../seasons/chapter1/p1/" title="انتخاب یک سیستم عامل" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -451,25 +306,11 @@
                 <span class="md-footer-nav__direction">
                   قبلی
                 </span>
-                مقدمه
+                انتخاب یک سیستم عامل
               </span>
             </div>
           </a>
         
-        
-          <a href="../contents/" title="محتوا" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  بعدی
-                </span>
-                محتوا
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
