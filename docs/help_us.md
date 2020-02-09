@@ -32,24 +32,22 @@
 * محیط مجازی رو فعال کنید :
 
 <div dir="ltr">
-    <span dir="ltr">Windows :<code>.venv\Scripts\activate</code></span><br/>
-    <span dir="ltr">Linux:<code>source ./.venv/bin/activate</code></span>
+    <span>Windows :<code>.venv\Scripts\activate</code></span><br/>
+	<span>Git Bash :<code>source .venv/Scripts/activate</code></span><br/> 
+    <span>Linux:<code>source .venv/bin/activate</code></span>
 </div>
 
 * ابزار های مورد نیاز پروژه رو در حالی که محیط مجازی پایتون فعال هست رو به کمک pip نصب کنید:
 
 <div dir="ltr"><code>pip install -r requirements.txt</code></div>
 
-* حالا که محیط توسعه آمادست؛ فقط کافیه تم استفاده شده برای پروژه رو برای راست چین کانفیگ کنید:
+* حالا که محیط توسعه آمادست؛فایل mkdocs-theme-material.yml  را در مسیر زیر کپی کنید:
 
-<div dir="ltr">file path : <b>.venv/lib/python3.6/site-packages/material/mkdocs_theme.yml</b></div>
+<div dir="ltr">file path Linux: <b>.venv/lib/python3.X/site-packages/material/mkdocs_theme.yml</b></div>
+<div dir="ltr">file path Windows: <b>.venv/Lib/site-packages/material/mkdocs_theme.yml</b></div>
 
- فایل بالا رو با یک ویرایشگر متن باز کنید و متغیر های زیر رو مقدار دهی کنید :
+در بخش مسیر فایل لینوکس X نسخه پایتون شما می باشد.
 
-<div dir="ltr">
-    <code>language: fa</code><br>
-    <code>direction: rtl</code>
-</div>
 
 * برای تغییراتی که قصد اعمال اونها رو دارید یه شاخه جدید توی مخزن بسازید و توی اون کار کنید که با شاخه اصلی قاطی نشه:
 
