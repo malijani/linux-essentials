@@ -7,9 +7,10 @@ theme:
         search: 83   # s
 nav:
 - 'index.md'
+- 'contents.md'
 - 'preface.md'
 - 'help_us.md'
-- 'contents.md'
+
 - 'فصل ۱ - انتخاب یک سیستم عامل' : 'chapters/chapter1/contents.md'
 - 'فصل ۲ - درک مجوز نرم افزاری' : 'chapters/chapter2/contents.md'
 - 'فصل ۳ - بررسی اصول و فلسفه لینوکس' : 'chapters/chapter3/contents.md'
