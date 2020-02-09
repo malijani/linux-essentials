@@ -1,9 +1,18 @@
 site_name: ملزومات لینوکس
-theme: material
+
+theme:
+    name: material
+    highlightjs: true
+    shortcuts:
+        search: 83   # s
 nav:
 - 'index.md'
 - 'preface.md'
 - 'help_us.md'
 - 'contents.md'
-- 'seasons/chapter1/p1.md'
+- 'chapters/chapter1/contents.md'
 - 'glossary.md'
+
+markdown_extensions:
+    - markdown_include.include:
+        base_path: docs
