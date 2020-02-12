@@ -29,9 +29,8 @@ Free Software Foundation(FSF)،‌ Open Source Initiative(OSI)، Creative Common
 * استفاده از مجوز های متن باز
 
 
-## بررسی مجوزهای نرم افزاری (Software License)
-## بنیاد نرم افزار آزاد (FSF)
-## سازمان ابتکار عمل نرم افزار آزاد (OSI)
-## سازمان عوام خلاق(CC)
-## استفاده از مجوز های متن باز
-
+{!./chapters/chapter2/p1.md!}
+{!./chapters/chapter2/p2.md!}
+{!./chapters/chapter2/p3.md!}
+{!./chapters/chapter2/p4.md!}
+{!./chapters/chapter2/p5.md!}
