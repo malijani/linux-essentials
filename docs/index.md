@@ -7,6 +7,6 @@
 
 **نویسندگان: Christine Bresnahan و Richard Blum**
 
-**بازگرداننده : محمد علیجانی**
+**مترجم : محمد علیجانی**
 
 **[گیتهاب من](https://github.com/malijani/)**
