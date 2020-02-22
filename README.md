@@ -4,7 +4,7 @@
 <div dir="rtl">
 <h6>قدم های مانده برای تکمیل کتاب</h6>
 <ul>
-<li><input type="checkbox" onclick="return false;"/>مقدمه</li>
+<li><input type="checkbox"/>مقدمه</li>
 <li style="list-style-type: square;">فصل اول</li>
 <li>فصل دوم</li>
 <li>فصل سوم</li>
