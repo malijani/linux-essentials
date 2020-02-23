@@ -14,3 +14,9 @@ unzip site.zip
 mv site/* .
 # remove unneeded files
 rm -rfv site/ site.zip
+# add files to git
+git add .
+# commit site update
+git commit -m "Updated site"
+# push changes
+git push -u origin gh-pages
