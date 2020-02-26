@@ -1,0 +1,603 @@
+
+
+
+
+<!doctype html>
+<html lang="fa" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="کپی کردن">
+      
+        <meta name="lang:clipboard.copied" content="کپی شد">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="False">
+      
+        <meta name="lang:search.pipeline.trimmer" content="False">
+      
+        <meta name="lang:search.result.none" content="سندی یافت نشد">
+      
+        <meta name="lang:search.result.one" content="1 سند یافت شد">
+      
+        <meta name="lang:search.result.other" content="# سند یافت شد">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>P5 - ملزومات لینوکس</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vazir+WOL:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Vazir WOL","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="rtl">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#virtualbox" tabindex="1" class="md-skip">
+        پرش به محتویات
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="ملزومات لینوکس" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">book</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              ملزومات لینوکس
+            </span>
+            <span class="md-header-nav__topic">
+              
+                P5
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="جستجو" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            برای شروع جستجو تایپ کنید
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="ملزومات لینوکس" class="md-nav__button md-logo">
+      
+        <i class="md-icon">book</i>
+      
+    </a>
+    ملزومات لینوکس
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="عنوان" class="md-nav__link">
+      عنوان
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../contents/" title="محتوا" class="md-nav__link">
+      محتوا
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../preface/" title="مقدمه" class="md-nav__link">
+      مقدمه
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../help_us/" title="مشارکت در نوشتن کتاب" class="md-nav__link">
+      مشارکت در نوشتن کتاب
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contents/" title="فصل ۱ - انتخاب یک سیستم عامل" class="md-nav__link">
+      فصل ۱ - انتخاب یک سیستم عامل
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../chapter2/contents/" title="فصل ۲ - درک مجوز نرم افزاری" class="md-nav__link">
+      فصل ۲ - درک مجوز نرم افزاری
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../chapter3/contents/" title="فصل ۳ - بررسی اصول و فلسفه لینوکس" class="md-nav__link">
+      فصل ۳ - بررسی اصول و فلسفه لینوکس
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../chapter4/contents/" title="فصل ۴ - استفاده از ابزار های رایج لینوکس" class="md-nav__link">
+      فصل ۴ - استفاده از ابزار های رایج لینوکس
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../chapter5/contents/" title="فصل ۵ - مدیریت سخت افزار" class="md-nav__link">
+      فصل ۵ - مدیریت سخت افزار
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../chapter6/contents/" title="فصل ۶ - آشنایی با خط فرمان" class="md-nav__link">
+      فصل ۶ - آشنایی با خط فرمان
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../chapter7/contents/" title="فصل ۷ - مدیریت فایل ها" class="md-nav__link">
+      فصل ۷ - مدیریت فایل ها
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../chapter8/contents/" title="فصل ۸ - جستجو، استخراج، و آرشیو کردن داده ها" class="md-nav__link">
+      فصل ۸ - جستجو، استخراج، و آرشیو کردن داده ها
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../chapter9/contents/" title="فصل ۹ - کنکاش پردازش ها و پردازش داده ها" class="md-nav__link">
+      فصل ۹ - کنکاش پردازش ها و پردازش داده ها
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../chapter10/contents/" title="فصل ۱۰ - ویرایش فایل ها" class="md-nav__link">
+      فصل ۱۰ - ویرایش فایل ها
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../chapter11/contents/" title="فصل ۱۱ - ساخت اسکریپت" class="md-nav__link">
+      فصل ۱۱ - ساخت اسکریپت
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../chapter12/contents/" title="فصل ۱۲ - فهم مقدماتی امنیت" class="md-nav__link">
+      فصل ۱۲ - فهم مقدماتی امنیت
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../chapter13/contents/" title="فصل ۱۳ - ساخت کاربر و گروه" class="md-nav__link">
+      فصل ۱۳ - ساخت کاربر و گروه
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../chapter14/contents/" title="فصل ۱۴ - تنظیم مالکیت و دسترسی ها" class="md-nav__link">
+      فصل ۱۴ - تنظیم مالکیت و دسترسی ها
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../chapter15/contents/" title="فصل ۱۵ - مدیریت اتصالات شبکه" class="md-nav__link">
+      فصل ۱۵ - مدیریت اتصالات شبکه
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../glossary/" title="واژه نامه" class="md-nav__link">
+      واژه نامه
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">فهرست موضوعات</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#virtualbox" class="md-nav__link">
+    انتخاب و نصب یک توزیع لینوکس در مجازی ساز VirtualBox
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>P5</h1>
+                
+                <h2 id="virtualbox">انتخاب و نصب یک توزیع لینوکس در مجازی ساز VirtualBox</h2>
+<p><img alt="تصویر 1.5.1" src="../images/1.5/1.5.1.png" />
+<img alt="تصویر 1.5.2" src="../images/1.5/1.5.2.png" />
+<img alt="تصویر 1.5.3" src="../images/1.5/1.5.3.png" />
+<img alt="تصویر 1.5.6" src="../images/1.5/1.5.6.png" />
+<img alt="تصویر 1.5.4" src="../images/1.5/1.5.4.png" />
+<img alt="تصویر 1.5.5" src="../images/1.5/1.5.5.png" />
+<img alt="تصویر 1.5.7" src="../images/1.5/1.5.7.png" />
+<img alt="تصویر 1.5.8" src="../images/1.5/1.5.8.png" />
+<img alt="تصویر 1.5.9" src="../images/1.5/1.5.9.png" />
+<img alt="تصویر 1.5.10" src="../images/1.5/1.5.10.png" />
+<img alt="تصویر 1.5.11" src="../images/1.5/1.5.11.png" />
+<img alt="تصویر 1.5.12" src="../images/1.5/1.5.12.png" />
+<img alt="تصویر 1.5.13" src="../images/1.5/1.5.13.png" />
+<img alt="تصویر 1.5.14" src="../images/1.5/1.5.14.png" />
+<img alt="تصویر 1.5.15" src="../images/1.5/1.5.15.png" />
+<img alt="تصویر 1.5.16" src="../images/1.5/1.5.16.png" />
+<img alt="تصویر 1.5.17" src="../images/1.5/1.5.17.png" />
+<img alt="تصویر 1.5.18" src="../images/1.5/1.5.18.png" />
+<img alt="تصویر 1.5.19" src="../images/1.5/1.5.19.png" />
+<img alt="تصویر 1.5.20" src="../images/1.5/1.5.20.png" />
+<img alt="تصویر 1.5.21" src="../images/1.5/1.5.21.png" />
+<img alt="تصویر 1.5.22" src="../images/1.5/1.5.22.png" />
+<img alt="تصویر 1.5.23" src="../images/1.5/1.5.23.png" />
+<img alt="تصویر 1.5.24" src="../images/1.5/1.5.24.png" />
+<img alt="تصویر 1.5.25" src="../images/1.5/1.5.25.png" />
+<img alt="تصویر 1.5.26" src="../images/1.5/1.5.26.png" />
+<img alt="تصویر 1.5.27" src="../images/1.5/1.5.27.png" />
+<img alt="تصویر 1.5.28" src="../images/1.5/1.5.28.png" />
+<img alt="تصویر 1.5.29" src="../images/1.5/1.5.29.png" />
+<img alt="تصویر 1.5.30" src="../images/1.5/1.5.30.png" />
+<img alt="تصویر 1.5.31" src="../images/1.5/1.5.31.png" />
+<img alt="تصویر 1.5.32" src="../images/1.5/1.5.32.png" />
+<img alt="تصویر 1.5.33" src="../images/1.5/1.5.33.png" />
+<img alt="تصویر 1.5.34" src="../images/1.5/1.5.34.png" />
+<img alt="تصویر 1.5.35" src="../images/1.5/1.5.35.png" />
+<img alt="تصویر 1.5.36" src="../images/1.5/1.5.36.png" />
+<img alt="تصویر 1.5.37" src="../images/1.5/1.5.37.png" />
+<img alt="تصویر 1.5.38" src="../images/1.5/1.5.38.png" />
+<img alt="تصویر 1.5.39" src="../images/1.5/1.5.39.png" />
+<img alt="تصویر 1.5.40" src="../images/1.5/1.5.40.png" />
+<img alt="تصویر 1.5.41" src="../images/1.5/1.5.41.png" />
+<img alt="تصویر 1.5.42" src="../images/1.5/1.5.42.png" />
+<img alt="تصویر 1.5.43" src="../images/1.5/1.5.43.png" />
+<img alt="تصویر 1.5.44" src="../images/1.5/1.5.44.png" />
+<img alt="تصویر 1.5.45" src="../images/1.5/1.5.45.png" />
+<img alt="تصویر 1.5.46" src="../images/1.5/1.5.46.png" />
+<img alt="تصویر 1.5.47" src="../images/1.5/1.5.47.png" />
+<img alt="تصویر 1.5.48" src="../images/1.5/1.5.48.png" />
+<img alt="تصویر 1.5.49" src="../images/1.5/1.5.49.png" />
+<img alt="تصویر 1.5.50" src="../images/1.5/1.5.50.png" />
+<img alt="تصویر 1.5.51" src="../images/1.5/1.5.51.png" />
+<img alt="تصویر 1.5.52" src="../images/1.5/1.5.52.png" />
+<img alt="تصویر 1.5.53" src="../images/1.5/1.5.53.png" />
+<img alt="تصویر 1.5.54" src="../images/1.5/1.5.54.png" />
+<img alt="تصویر 1.5.55" src="../images/1.5/1.5.55.png" />
+<img alt="تصویر 1.5.56" src="../images/1.5/1.5.56.png" />
+<img alt="تصویر 1.5.57" src="../images/1.5/1.5.57.png" />
+<img alt="تصویر 1.5.58" src="../images/1.5/1.5.58.png" />
+<img alt="تصویر 1.5.60" src="../images/1.5/1.5.60.png" />
+<img alt="تصویر 1.5.59" src="../images/1.5/1.5.59.png" />
+<img alt="تصویر 1.5.61" src="../images/1.5/1.5.61.png" />
+<img alt="تصویر 1.5.63" src="../images/1.5/1.5.63.png" />
+<img alt="تصویر 1.5.62" src="../images/1.5/1.5.62.png" />
+<img alt="تصویر 1.5.64" src="../images/1.5/1.5.64.png" />
+<img alt="تصویر 1.5.65" src="../images/1.5/1.5.65.png" />
+<img alt="تصویر 1.5.66" src="../images/1.5/1.5.66.png" />
+<img alt="تصویر 1.5.67" src="../images/1.5/1.5.67.png" />
+<img alt="تصویر 1.5.68" src="../images/1.5/1.5.68.png" />
+<img alt="تصویر 1.5.69" src="../images/1.5/1.5.69.png" />
+<img alt="تصویر 1.5.70" src="../images/1.5/1.5.70.png" />
+<img alt="تصویر 1.5.71" src="../images/1.5/1.5.71.png" />
+<img alt="تصویر 1.5.72" src="../images/1.5/1.5.72.png" />
+<img alt="تصویر 1.5.74" src="../images/1.5/1.5.74.png" />
+<img alt="تصویر 1.5.73" src="../images/1.5/1.5.73.png" />
+<img alt="تصویر 1.5.75" src="../images/1.5/1.5.75.png" />
+<img alt="تصویر 1.5.76" src="../images/1.5/1.5.76.png" />
+<img alt="تصویر 1.5.77" src="../images/1.5/1.5.77.png" />
+<img alt="تصویر 1.5.78" src="../images/1.5/1.5.78.png" />
+<img alt="تصویر 1.5.79" src="../images/1.5/1.5.79.png" />
+<img alt="تصویر 1.5.80" src="../images/1.5/1.5.80.png" />
+<img alt="تصویر 1.5.81" src="../images/1.5/1.5.81.png" />
+<img alt="تصویر 1.5.82" src="../images/1.5/1.5.82.png" />
+<img alt="تصویر 1.5.83" src="../images/1.5/1.5.83.png" />
+<img alt="تصویر 1.5.85" src="../images/1.5/1.5.85.png" />
+<img alt="تصویر 1.5.84" src="../images/1.5/1.5.84.png" />
+<img alt="تصویر 1.5.86" src="../images/1.5/1.5.86.png" />
+<img alt="تصویر 1.5.87" src="../images/1.5/1.5.87.png" />
+<img alt="تصویر 1.5.88" src="../images/1.5/1.5.88.png" />
+<img alt="تصویر 1.5.89" src="../images/1.5/1.5.89.png" />
+<img alt="تصویر 1.5.90" src="../images/1.5/1.5.90.png" />
+<img alt="تصویر 1.5.91" src="../images/1.5/1.5.91.png" />
+<img alt="تصویر 1.5.92" src="../images/1.5/1.5.92.png" />
+<img alt="تصویر 1.5.93" src="../images/1.5/1.5.93.png" />
+<img alt="تصویر 1.5.94" src="../images/1.5/1.5.94.png" />
+<img alt="تصویر 1.5.95" src="../images/1.5/1.5.95.png" />
+<img alt="تصویر 1.5.96" src="../images/1.5/1.5.96.png" />
+<img alt="تصویر 1.5.97" src="../images/1.5/1.5.97.png" />
+<img alt="تصویر 1.5.98" src="../images/1.5/1.5.98.png" />
+<img alt="تصویر 1.5.99" src="../images/1.5/1.5.99.png" />
+<img alt="تصویر 1.5.100" src="../images/1.5/1.5.100.png" />
+<img alt="تصویر 1.5.101" src="../images/1.5/1.5.101.png" />
+<img alt="تصویر 1.5.102" src="../images/1.5/1.5.102.png" />
+<img alt="تصویر 1.5.104" src="../images/1.5/1.5.104.png" />
+<img alt="تصویر 1.5.103" src="../images/1.5/1.5.103.png" />
+<img alt="تصویر 1.5.105" src="../images/1.5/1.5.105.png" />
+<img alt="تصویر 1.5.106" src="../images/1.5/1.5.106.png" />
+<img alt="تصویر 1.5.107" src="../images/1.5/1.5.107.png" />
+<img alt="تصویر 1.5.108" src="../images/1.5/1.5.108.png" />
+<img alt="تصویر 1.5.109" src="../images/1.5/1.5.109.png" />
+<img alt="تصویر 1.5.110" src="../images/1.5/1.5.110.png" /></p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>
