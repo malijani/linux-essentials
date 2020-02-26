@@ -17,6 +17,7 @@
 {!./chapters/chapter1/p2.md!}
 {!./chapters/chapter1/p3.md!}
 {!./chapters/chapter1/p4.md!}
+{!./chapters/chapter1/p5.md!}
 {!./chapters/chapter1/finish.md!}
 {!./chapters/chapter1/history-of-linux.md!}
 {!./chapters/chapter1/resources.md!}
