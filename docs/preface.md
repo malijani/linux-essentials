@@ -60,10 +60,11 @@
 در این کتاب نحوه نصب توزیع Ubuntu توضیح داده خواهد شد، اما شما می‌توانید پس از گذراندن آموزش های لازم برای یادگیری پایه‌ای سیستم توزیع دیگری را برای استفاده انتخاب و تست کنید؛
 برای مجازی سازی نیاز است که پردازنده مرکزی از این امر پشتیبانی کند و حداقل مشخصات سخت افزاری زیر را دارا باشید:
 <div dir="ltr">
-    <span><b>CPU : </b> 400 MHz Pentium Pro or better</span><br/>
-    <span><b>Minimum RAM : </b> 640 MiB</span><br/>
-    <span><b>Recommended RAM : </b> At least 1,152 MiB</span><br/>
-    <span><b>Hard Disk Space : </b> At least 9 GiB
+    <a href="https://xubuntu.org/requirements/">Xubuntu System Requirements</a>:</li><br/>
+    <span><b>CPU : </b> 400 MHz Pentium or better with PAE support</span><br/>
+    <span><b>Minimum RAM : </b>512 MiB</b></span><br/>
+    <span><b>Recommended RAM : </b>At least 1,152 MiB</b></span><br/>
+    <span><b>Hard Disk Space : </b>7.5 GB </b></span>
 </div>
 
 توجه کنید که مجازی سازی یک توزیع بدین معناست که شما در زمان اجرای سیستم عامل اصلی خودتان(که روی سخت افزار واقعی نصب شده است) قصد اجرای سیستم عامل دیگری را دارید که نیاز به منابع جداگانه خود دارد و در حال اجرای همزمان دو سیستم عامل روی یک سخت افزار هستید. ولی در عمل مجازی سازی دسترسی به سخت افزار اصلی وجود ندارد، پس به راحتی میتوانید عمل تست و یادگیری را درون آن انجام دهید.
