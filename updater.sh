@@ -13,18 +13,26 @@ fi
 shopt -s extglob
 rm -rv !(".gitignore"|"Sybex-LinuxEssentials2ED.pdf"|"CNAME"|".git"|".nojekyll"|".venv"|"updater.sh")
 shopt -u extglob
+
 # copy site.zip from master branch
-git checkout master -- site.zip
+#git checkout master -- site.zip
+## >> UPDATE : the site.zip add to gitignore! so it's in both branches by default.
+
 # unzip build of site
 unzip site.zip
+
 # move files from site directory
 mv site/* .
+
 # remove unneeded files
 rm -rfv site/ site.zip
+
 # add files to git
 git add .
+
 # commit site update
 COMMIT=$(git rev-parse --short HEAD)
 git commit -m "Deployed ${COMMIT} with updater"
+
 # push changes
 git push -u origin gh-pages
