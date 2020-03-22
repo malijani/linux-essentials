@@ -20,12 +20,16 @@ shopt -u extglob
 
 # unzip build of site
 #unzip site.zip
+## >> UPDATE : no need to create zip file anymore
 
 # move files from site directory
-mv site/* .
+if [ -e "site" ]; then
+    mv site/* .
+fi
 
 # remove unneeded files
 #rm -rfv site/ site.zip
+## >> UPDATE : no need to delete the file that ignored by .gitignore
 
 # add files to git
 git add .
