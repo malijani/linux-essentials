@@ -11,7 +11,7 @@ fi
 
 # remove all files except these:
 shopt -s extglob
-rm -rv !(".gitignore"|"Sybex-LinuxEssentials2ED.pdf"|"CNAME"|".git"|".nojekyll"|".venv"|"updater.sh"|"site.zip")
+rm -rv !(".gitignore"|"Sybex-LinuxEssentials2ED.pdf"|"CNAME"|".git"|".nojekyll"|".venv"|"updater.sh"|"site")
 shopt -u extglob
 
 # copy site.zip from master branch
