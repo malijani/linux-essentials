@@ -10,6 +10,11 @@ if [[ "$BRANCH" != "gh-pages" ]]; then
 fi
 
 
+# remove all files except these:
+shopt -s extglob
+rm -rv !(".gitignore"|"CNAME"|".git"|".nojekyll"|".venv"|"updater.sh"|"site")
+shopt -u extglob
+
 # copy site.zip from master branch
 #git checkout master -- site.zip
 ## >> UPDATE : the site.zip add to gitignore! so it's in both branches by default.
@@ -24,10 +29,6 @@ if [ -e "site" ]; then
     mv site/* .
 fi
 
-# remove all files except these:
-shopt -s extglob
-rm -rv !(".gitignore"|"CNAME"|".git"|".nojekyll"|".venv"|"updater.sh"|"site")
-shopt -u extglob
 # remove unneeded files
 #rm -rfv site/ site.zip
 ## >> UPDATE : no need to delete the file that ignored by .gitignore
