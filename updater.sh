@@ -9,10 +9,6 @@ if [[ "$BRANCH" != "gh-pages" ]]; then
   exit 1
 fi
 
-# remove all files except these:
-shopt -s extglob
-rm -rv !(".gitignore"|"Sybex-LinuxEssentials2ED.pdf"|"CNAME"|".git"|".nojekyll"|".venv"|"updater.sh"|"site")
-shopt -u extglob
 
 # copy site.zip from master branch
 #git checkout master -- site.zip
@@ -24,9 +20,14 @@ shopt -u extglob
 
 # move files from site directory
 if [ -e "site" ]; then
+    # move files from site directory into root of gh-pages
     mv site/* .
 fi
 
+# remove all files except these:
+shopt -s extglob
+rm -rv !(".gitignore"|"CNAME"|".git"|".nojekyll"|".venv"|"updater.sh"|"site")
+shopt -u extglob
 # remove unneeded files
 #rm -rfv site/ site.zip
 ## >> UPDATE : no need to delete the file that ignored by .gitignore
