@@ -19,13 +19,13 @@ shopt -u extglob
 ## >> UPDATE : the site.zip add to gitignore! so it's in both branches by default.
 
 # unzip build of site
-unzip site.zip
+#unzip site.zip
 
 # move files from site directory
 mv site/* .
 
 # remove unneeded files
-rm -rfv site/ site.zip
+#rm -rfv site/ site.zip
 
 # add files to git
 git add .
