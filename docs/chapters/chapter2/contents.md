@@ -4,7 +4,7 @@
 
 بطور کلی، نرم افزار متن باز به سه سازمان زیر مدیون است:
 
-Free Software Foundation(FSF)،‌ Open Source Initiative(OSI)، Creative Commons(CC)
+<div dir="ltr">Free Software Foundation(FSF)،‌ Open Source Initiative(OSI)، Creative Commons(CC)</div>
 
 هر سازمان دارای فلسفه و نقش مشخصی در جهان نرم افزار متن باز است. همچنین تعداد زیادی مجوز ویژه متن باز و مشاغل مرتبط وجود دارد که در پایان فصل به آنها خواهیم پرداخت.
 
