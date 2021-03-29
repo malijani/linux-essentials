@@ -10,7 +10,7 @@ mkdocs==1.0.4
 mkdocs-material==4.6.0
 mkdocs-minify-plugin==0.2.1
 pep562==1.0
-Pygments==2.5.2
+Pygments==2.7.4
 pymdown-extensions==6.2.1
 PyYAML==5.3
 six==1.14.0
