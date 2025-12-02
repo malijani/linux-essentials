@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block extrahead %}
+
+<link href="../fonts/vazirmatn.css" rel="stylesheet" />
+<style>
+  body {
+    font-family: "Vazirmatn" !important;
+  }
+</style>
+
+{% endblock %}

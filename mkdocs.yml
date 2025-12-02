@@ -2,6 +2,7 @@ site_name: ملزومات لینوکس
 
 theme:
   name: material
+  custom_dir: docs/overrides
   highlightjs: true
   shortcuts:
     search: 83
@@ -13,7 +14,7 @@ theme:
     primary:
     accent:
   font:
-    text: "Vazir WOL"
+    text: "Vazirmatn"
     code: "Roboto Mono"
   favicon: "./docs/images/index/book_logo.png"
   logo: "images/logo.png"
@@ -24,27 +25,28 @@ theme:
 
 plugins:
   - live-edit
+
 nav:
-  - 'index.md'
-  - 'contents.md'
-  - 'preface.md'
-  - 'help_us.md'
-  - 'فصل ۱ - انتخاب یک سیستم عامل': 'chapters/chapter1/contents.md'
-  - 'فصل ۲ - درک مجوز نرم افزاری': 'chapters/chapter2/contents.md'
-  - 'فصل ۳ - بررسی اصول و فلسفه لینوکس': 'chapters/chapter3/contents.md'
-  - 'فصل ۴ - استفاده از ابزار های رایج لینوکس': 'chapters/chapter4/contents.md'
-  - 'فصل ۵ - مدیریت سخت افزار': 'chapters/chapter5/contents.md'
-  - 'فصل ۶ - آشنایی با خط فرمان': 'chapters/chapter6/contents.md'
-  - 'فصل ۷ - مدیریت فایل ها': 'chapters/chapter7/contents.md'
-  - 'فصل ۸ - جستجو، استخراج، و آرشیو کردن داده ها': 'chapters/chapter8/contents.md'
-  - 'فصل ۹ - کنکاش پردازش ها و پردازش داده ها': 'chapters/chapter9/contents.md'
-  - 'فصل ۱۰ - ویرایش فایل ها': 'chapters/chapter10/contents.md'
-  - 'فصل ۱۱ - ساخت اسکریپت': 'chapters/chapter11/contents.md'
-  - 'فصل ۱۲ - فهم مقدماتی امنیت': 'chapters/chapter12/contents.md'
-  - 'فصل ۱۳ - ساخت کاربر و گروه': 'chapters/chapter13/contents.md'
-  - 'فصل ۱۴ - تنظیم مالکیت و دسترسی ها': 'chapters/chapter14/contents.md'
-  - 'فصل ۱۵ - مدیریت اتصالات شبکه': 'chapters/chapter15/contents.md'
-  - 'glossary.md'
+  - "index.md"
+  - "contents.md"
+  - "preface.md"
+  - "help_us.md"
+  - "فصل ۱ - انتخاب یک سیستم عامل": "chapters/chapter1/contents.md"
+  - "فصل ۲ - درک مجوز نرم افزاری": "chapters/chapter2/contents.md"
+  - "فصل ۳ - بررسی اصول و فلسفه لینوکس": "chapters/chapter3/contents.md"
+  - "فصل ۴ - استفاده از ابزار های رایج لینوکس": "chapters/chapter4/contents.md"
+  - "فصل ۵ - مدیریت سخت افزار": "chapters/chapter5/contents.md"
+  - "فصل ۶ - آشنایی با خط فرمان": "chapters/chapter6/contents.md"
+  - "فصل ۷ - مدیریت فایل ها": "chapters/chapter7/contents.md"
+  - "فصل ۸ - جستجو، استخراج، و آرشیو کردن داده ها": "chapters/chapter8/contents.md"
+  - "فصل ۹ - کنکاش پردازش ها و پردازش داده ها": "chapters/chapter9/contents.md"
+  - "فصل ۱۰ - ویرایش فایل ها": "chapters/chapter10/contents.md"
+  - "فصل ۱۱ - ساخت اسکریپت": "chapters/chapter11/contents.md"
+  - "فصل ۱۲ - فهم مقدماتی امنیت": "chapters/chapter12/contents.md"
+  - "فصل ۱۳ - ساخت کاربر و گروه": "chapters/chapter13/contents.md"
+  - "فصل ۱۴ - تنظیم مالکیت و دسترسی ها": "chapters/chapter14/contents.md"
+  - "فصل ۱۵ - مدیریت اتصالات شبکه": "chapters/chapter15/contents.md"
+  - "glossary.md"
 
 markdown_extensions:
   - markdown_include.include:
