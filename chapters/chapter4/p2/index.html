@@ -1,0 +1,922 @@
+
+<!doctype html>
+<html lang="fa" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../docs/images/index/book_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>P2 - ملزومات لینوکس</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vazirmatn:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Vazirmatn";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+
+<link href="../../../fonts/vazirmatn.css" rel="stylesheet" />
+<style>
+  body {
+    font-family: "Vazirmatn" !important;
+  }
+</style>
+
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="rtl" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          پرش به محتویات
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="سرتیتر">
+    <a href="../../.." title="ملزومات لینوکس" class="md-header__button md-logo" aria-label="ملزومات لینوکس" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ملزومات لینوکس
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              P2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="هدایت" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ملزومات لینوکس" class="md-nav__button md-logo" aria-label="ملزومات لینوکس" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    ملزومات لینوکس
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    عنوان
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    محتوا
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../preface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    مقدمه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../help_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    مشارکت در نوشتن کتاب
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter1/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱ - انتخاب یک سیستم عامل
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۲ - درک مجوز نرم افزاری
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۳ - بررسی اصول و فلسفه لینوکس
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۴ - استفاده از ابزار های رایج لینوکس
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter5/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۵ - مدیریت سخت افزار
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter6/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۶ - آشنایی با خط فرمان
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter7/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۷ - مدیریت فایل ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter8/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۸ - جستجو، استخراج، و آرشیو کردن داده ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter9/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۹ - کنکاش پردازش ها و پردازش داده ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter10/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۰ - ویرایش فایل ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter11/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۱ - ساخت اسکریپت
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter12/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۲ - فهم مقدماتی امنیت
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter13/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۳ - ساخت کاربر و گروه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter14/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۴ - تنظیم مالکیت و دسترسی ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter15/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۵ - مدیریت اتصالات شبکه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    واژه نامه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        استفاده از نرم افزار های بهره وری
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="استفاده از نرم افزار های بهره وری">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        پیدا کردن ابزار مناسب برای کار مورد نظر
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        استفاده از مرورگر وب
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ابزارهای پست الکترونیکی
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>P2</h1>
+
+<h2 id="_1">استفاده از نرم افزار های بهره وری</h2>
+<p>قلمرو ابزارهای بهره وری به شدت گسترده است؛ صدها یا هزاران ابزار بهره وری وجود دارد که کتب مختلف و معدودی در مورد تعداد زیادی از آنها نوشته شده اند. به همین خاطر، در این بخش تعدادی از این ابزارها را به صورت خلاصه در دسته بندی های رایج مورد بررسی قرار خواهیم داد. این دسته بندی رایج ابزارهای بهره وری شامل <strong>ابزار های مرورگر وب(web browsers)</strong>، <strong>ابزارهای پست الکترونیکی(email clients)</strong>، <strong>ابزارهای اداری(office tools)</strong>، <strong>برنامه های محتوای چند رسانه ای(multimedia applications)</strong>، <strong>رایانش ابری(cloud computing)</strong> و <strong>ابزارهای تلفن همراه(mobile applications)</strong> می‌شوند. قبل از توضیح درمورد این ابزارها بهتر است طرفندهایی را که به کمک آنها می‌توان ابزار مناسب کار مشخصی را در لینوکس پیدا کرد، مورد بررسی قرار دهیم.</p>
+<h3 id="_2">پیدا کردن ابزار مناسب برای کار مورد نظر</h3>
+<p>سیستم عامل گنو/لینوکس ابزارهای بهره وری مختلفی را در دسته بندی های مختلف و گسترده ای ارائه می‌دهد، اما اگر به صورت کامل با این زمینه آشنایی نداشته باشید ممکن است برای پیدا کردن ابزار مورد نظر خود با مشکلاتی مواجه شوید چرا که همیشه نام ابزار مشخص کننده عملکرد و هدف ابزار نیست.</p>
+<p>چندین تکنیک که میتوانند به شما در یافتن ابزار مورد نظرتان کمک کنند :</p>
+<p><strong>استفاده از منوهای میزکار</strong></p>
+<p>شما میتوانید از منوها یا سایر ابزارهایی که توسط میزکار برای نمایش لیست ابزارهای نصب شده فراهم شده اند برای یافتن ابزارهای بهره وری نصب شده در سیستم عامل خود بهره ببرید. چنین ابزارهایی معمولاً برنامه‌ها را به صورت کارآمدی دسته بندی می‌کنند. بعنوان مثال Whisker Menu در میزکار Xfce (که قبلاً در تصویر ۴.۲ آن را دیدید) برنامه های موجود و نصب شده را در دسته بندی های مختلفی(مثل Settings, Accessories, Developement, Education, Graphics, Internet, Multimedia, ... ) تقسیم می‌کند. این عمل به شما کمک می‌کند تا به راحتی ابزار مورد نیاز را پیدا کنید. البته فقط ابزارهایی که در سیستم عامل شما نصب شده اند نمایش داده خواهند شد.</p>
+<p><strong>جست و جو</strong></p>
+<p>توجه کنید که روش های مختلفی برای جست و جوی ابزار در زمینه مورد نظرتان وجود دارد. می‌توانید با جست و جو در موتور جست و جوی وب محبوبتان ابزار مورد نظر خود را پیدا کنید، مثلاً اگر ابزارهای office برای سیستم عامل گنو/لینوکس را نیاز دارید کافیست که جمله زیر را جست و جو کنید :</p>
+<div dir="ltr"><strong>office tools for linux</strong></div>
+<p>خواهید دید که وبسایت های مختلفی ابزار های مختلفی را برای استفاده به شما پیشنهاد خواهند داد.</p>
+<p>امروزه در اکثر توزیع ها و یا محیط های میزکار گنو/لینوکس ابزارهای گرافیکی مدیریت بسته وجود دارند که به صورت هرچه کامل تر ابزارهای موجود و قابل نصب بر روی توزیع مورد استفاده شما را دسته بندی کرده اند و گزینه های مختلفی را برای جست و جو و مدیریت ابزارهای موجود(در مخازن یا سرور میزبانی ابزارهای مورد استفاده شما) فراهم کرده اند که بعنوان مثال در شکل ۴.۱۲ ابزار mintinstall که یک ابزار گرافیکی برای مدیریت بسته ها در توزیع linux mint می‌باشد نمایش داده شده :</p>
+<p><img alt="ابزار mintinstall و دسته بندی ابزاری" src="../images/p2/4.12-software_manager.png" /></p>
+<blockquote>
+<p><strong>تصویر ۴.۱۲</strong> در اکثر ابزارهای گرافیکی مدیریت بسته های گنو/لینوکس ابزارها به روش های مختلفی دسته بندی شده اند و شما را برای استفاده و جست و جوی ابزار برای زمینه مورد نظر خودتان یاری می‌کنند.</p>
+</blockquote>
+<p><strong>یافتن ابزارهای مشابه</strong></p>
+<p>اگر معمولاً یک ابزار مختص MS Windows را استفاده می‌کنید، می‌توانید ابزار مشابه و جایگزین آن را در گنو/لینوکس پیدا کنید. با استفاده از سایت هایی همچون:  <a href="https://www.linuxalt.com/">LinuxAlt</a> یا <a href="https://wiki.linuxquestions.org/wiki/Linux_software_equivalent_to_Windows_software">Wiki LinuxQuestions</a>.</p>
+<p>پیشنهاد مترجم: وبسایت  <a href="https://alternativeto.net/">AlternativeTo</a> نیز مشابه های مناسبی برای سیستم عامل های مختلف پیشنهاد می‌کند.</p>
+<p><strong>استفاده از تجربه دیگران</strong></p>
+<p>در صورتی که با تحقیق های اولیه ابزاری مشابه برای رفع نیاز خود پیدا نکردید، به راحتی می‌توانید از افراد دیگر - همکاران، دوستان، یا اشخاص حاضر در گفتگو های آنلاین - برای یافتن ابزار مناسب کار خود کمک بگیرید.</p>
+<p><br>
+برخی از این روش ها، مانند استفاده از منو های میزکار، فقط ابزار های نصب شده فعلی روی سیستم عامل را نمایش خواهند داد. روش های دیگر، مانند جستجوی آنلاین، ممکن است به نرم افزاری که نصب نکرده باشید ختم شوند. معمولاً با استفاده از ابزار مدیریت بسته (یا پکیج منیجر / Package manager) که عمدتاً توسط توزیع مورد استفاده شما ارائه می‌شود، به راحتی نرم افزار مد نظر خود را نصب نمایید. </p>
+<h3 id="_3">استفاده از مرورگر وب</h3>
+<p>لینوکس طیف عظیمی از مرورگر های وب را پشتیبانی می‌کند: 
+<strong>Chromium</strong></p>
+<p><a href="https://www.chromium.org/chromium-projects/">کرومیوم</a> یک پروژه متن باز است که امنیت، پایداری و سرعت را برای تجربه کاربران به ارمغان می‌آورد. در واقع این مروگر وب پایه و اساس نرم افزار هایی همچون Google Chrome, Brave, Opera, Microsoft Edge, Epic, Comodo Dragon و... است. همچنین این ابزار در مخزن اصلی اکثر توزیع های لینوکس قرار دارد و به سهولت تمام قابل استفاده خواهد بود.</p>
+<p><strong>Google Chrome</strong></p>
+<p><a href="https://www.google.com/chrome/">مرورگر گوگل کروم</a>  مدعی استفاده آسان و سریع بودن است. با انتشار اولین نسخه از ۲۰۰۸ خیلی سریع محبوبیت آن افزایش یافت. هرچند که کروم یک پروژه تجاری است اما به صورت رایگان در دسترس است. </p>
+<p><strong>Firefox</strong></p>
+<p><a href="http://www.mozilla.org/">فایرفاکس</a> یک نرم افزار متن باز است که توسط کمپانی موزیلا و تحت مجوز اختصاصی (متن باز/آزاد) MPL ارائه می‌شود. استاندارد طلایی مرور وب با سرعت، حفظ حریم خصوصی و کنترل، شعار این مرورگر است. معمولا به صورت پیش فرض با اکثر توزیع های لینوکس ارائه می‌شود.</p>
+<p><strong>Gnome Web</strong>
+<a href="https://wiki.gnome.org/Apps/Web">وب</a>، اصالتاً Epiphany، مروگر میزکار Gnome است. اصل طراحی آن بر اساس سادگی و سهولت استفاده است.</p>
+<p><strong>Konqueror</strong></p>
+<p><a href="https://apps.kde.org/konqueror/">Konqueror</a>، یکی از نرم افزار های اختصاصی میزکار KDE با عملکردی دوگانه است: یک مروگر وب و یک مدیر فایل. این مرورگر وب، اکثر صفحات وب را به خوبی اجرا می‌کند. یک نرم افزار سبک که خصوصا هنگام استفاده از KDE ارزش استفاده را دارد. </p>
+<p><strong>Lynx</strong></p>
+<p>اکثر مرورگر های وب، گرافیکی هستند و قابلیت های مختلفی مانند نمایش متون با فونت های متنوع، اجرای انیمیشن های گرافیکی و صفحات مدرن وب و دنیایی از قابلیت های متنوع دیگر را دارند. <a href="http://lynx.browser.org/">Lynx</a> یک مرورگر وب غیرمعمول مبتنی بر متن است. هنگام اجرای لینوکس در حالت متنی (TTY) یا زمانی‌که قصد دارید صفحات وب را بدون اجرای گرافیک مرور کنید، یک انتخاب مناسب است. برای تست هنگام توسعه نیز بسیار کاربردی خواهد بود، اگر صفحه وب شما در این مروگر خوانا بود، چرا که وبسایت شما بهشت افرادی خواهد بود که از تکنولوژی متن خوان برای مرور صفحات وب استفاده می‌کنند.</p>
+<blockquote>
+<p>البته باید توجه داشت این امر برای دریافت محتوای وبسایت جهت اوتوماسیون های مختلف و اسکریپت هایی که قابلیت اجرای جاوااسکریپت در صفحات وب را ندارند، بسیار کاربردی خواهد بود.  مرورگر های متنوعی مانند Lynx وجود دارند، مثل :‌ <a href="https://w3m.sourceforge.net/">w3m</a>، <a href="http://elinks.or.cz/">Elinks</a> و...</p>
+</blockquote>
+<p><strong>Opera</strong></p>
+<p>مرورگر <a href="http://www.opera.com/">اوپرا</a> یک مرورگ غیر عادی تجاری در فهرست رقابتی مروگر های وب لینوکس است. اوپرا مدعی سرعت باورنکردنی است. اگرچه یک مرورگر تجاری است، اما به رایگان در دسترس همگان قرار گرفته. </p>
+<p>مورد قابل توجه این است که مرورگر های Edge و Safari در این فهرست قرار نمی‌گیرند، زیرا انحصاراً به ترتیب برای سیستم عامل های ویندوز و مجموعه سیستم عامل های Apple ایجاد و منتشر می‌شوند. اگرچه استاندارد دنیای وب امروز سازگاری با اکثر مرورگر های وب را پیش نیاز صفحات وب قرار داده، ولی اگر با صفحه ای از وب مواجه شدید که با چنین مرورگر هایی اجرا می‌شد، می‌تواند حداقل با یکی از مرورگر های قابل اجرا در لینوکس نیز اجرا شود. پس برای اطمینان در سیستم عامل لینوکس خود حداقل دو مرورگر وب را نصب داشته باشد.</p>
+<p>مرورگر های وب کاربران را به سادگی به دنیایی از اطلاعات متصل میکنند -- به معنای واقعی کلمه! </p>
+<p>متاسفانه دنیای وب وجهه های تاریکی نیز دارد. مواردی از قبیل:‌</p>
+<ul>
+<li>
+<p>وبسایت ها می‌توانند گزارش اطلاعات مرتبط صفحاتی که توسط کاربران مورد استفاده قرار گرفته را جمع آوری کنند و این اطلاعات در روند بازاریابی به صورتی که مورد استقبال شما نخواهد بود استفاده خواهند شد.</p>
+</li>
+<li>
+<p>اکثر محتوای وب، پویا (داینامیک) هستند، به این معنی که وبسایت ها از برنامه های کوچکتری تشکیل شده اند که توسط مرورگر شما دانلود و اجرا خواهند شد، مثل فایل های JavaScript که عملا مرورگر شما مفسر آن هاست.</p>
+</li>
+<li>
+<p>وبسایت های نامعتبر معمولاً از روش هایی مختلف (از قبیل مهندسی اجتماعی)، کاربران را ترغیب به استفاده از خود کرده و اطلاعات حساس آن ها، از قبیل اطلاعات حساب بانکی، را به سرقت می‌برند.این تکنیک بعنوان <em>فیشینگ</em> (phishing) شناخته می‌شود. فرض کنید وارد linstagram.com شده و در صفحه وبی دقیقا کپی شده همانند صفحه ورود اینستاگرام، اطلاعات حساب کاربری خود را وارد می‌کنید، هر چند که وارد حساب کاربری اصلی خود در instagram.com می‌شوید اما اطلاعات ورود شما به سرقت رفته، چرا که عملکرد ورود شما در وبسایت جعلی بوده که ابتدای آن با حرف L کوچک شما را گمراه کرده است.</p>
+</li>
+<li>
+<p>بسیاری از وبسایت ها <em>ایمن</em> نیستند، مثلا اگر وبسایتی از پروتکل HTTP استفاده کند، اطلاعات رد و بدل شده بین شما و وبسایت توسط نقطه های اتصال اینترنت قابل مشاهده و خوانا خواهند بود. البته اکثر وبسایت های حساس مانند بانک های الکترونیکی، فروشگاه های حرفه ای و... از ارتباط های امن و رمزنگاری شده HTTPS استفاده می‌کنند و همچنین اطلاعات حساس شما همانند پسورد را رمز نگاری می‌کنند.</p>
+</li>
+</ul>
+<blockquote>
+<p>البته در ۲۰۲۵ استاندارد های توسعه وب نیز در سطح دیگری قرار دارد و به صورت پایه ای هر چهارچوب یا ابزار احراز هویت یا مشابه های حساس دیگری که به صورت خارج از جعبه و حرفه ای ارائه می‌شوند، با پروتکل های رمز نگاری متنوع از اطلاعات کاربران محافظت می‌کنند.</p>
+</blockquote>
+<ul>
+<li>برای این که از جهت امنیت نگران شوید، پسورد های استفاده شده در اکثر وبسایت ها در دست دزدان الکترونیکی قرار دارد. سردرد از جایی شروع می‌شود که نمی‌توان در دنیای امروز برای هر وبسایت، رمز کاربری آن را به خاطر سپرد. البته اکثر مرورگر ها با ذخیره اطلاعات روی حافظه سیستم شما، چنین کاری را انجام می‌دهند که همچنان در تهدید دزیده شدن خواهند بود.</li>
+</ul>
+<blockquote>
+<p>در فصل ۱۳ راجع به رمز های عبوری که به سادگی در ذهن خواهند ماند و به سختی حدس زده خواهند شد، صحبت خواهیم کرد.</p>
+</blockquote>
+<p>البته، برخی از این مشکلات منحصرا برای وب نیستند. بعنوان مثال اکثر ارائه دهندگان سرویس پست الکترونیک، ایمن نیستند و بهتر است اطلاعات حساس خود را از طریق این پروتکل <em>ارسال نکنید</em>.</p>
+<h3 id="_4">ابزارهای پست الکترونیکی</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u06a9\u067e\u06cc \u0634\u062f", "clipboard.copy": "\u06a9\u067e\u06cc \u06a9\u0631\u062f\u0646", "search.result.more.one": "1 \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.more.other": "# \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.none": "\u0633\u0646\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f", "search.result.one": "1 \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.other": "# \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.placeholder": "\u0628\u0631\u0627\u06cc \u0634\u0631\u0648\u0639 \u062c\u0633\u062a\u062c\u0648 \u062a\u0627\u06cc\u067e \u06a9\u0646\u06cc\u062f", "search.result.term.missing": "\u0645\u0648\u062c\u0648\u062f \u0646\u06cc\u0633\u062a", "select.version": "\u0627\u0646\u062a\u062e\u0627\u0628 \u0648\u06cc\u0631\u0627\u06cc\u0634"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

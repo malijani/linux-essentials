@@ -1,0 +1,943 @@
+
+<!doctype html>
+<html lang="fa" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../docs/images/index/book_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>P3 - ملزومات لینوکس</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vazirmatn:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Vazirmatn";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+
+<link href="../../../fonts/vazirmatn.css" rel="stylesheet" />
+<style>
+  body {
+    font-family: "Vazirmatn" !important;
+  }
+</style>
+
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="rtl" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          پرش به محتویات
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="سرتیتر">
+    <a href="../../.." title="ملزومات لینوکس" class="md-header__button md-logo" aria-label="ملزومات لینوکس" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ملزومات لینوکس
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              P3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="هدایت" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ملزومات لینوکس" class="md-nav__button md-logo" aria-label="ملزومات لینوکس" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    ملزومات لینوکس
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    عنوان
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    محتوا
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../preface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    مقدمه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../help_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    مشارکت در نوشتن کتاب
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter1/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱ - انتخاب یک سیستم عامل
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۲ - درک مجوز نرم افزاری
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۳ - بررسی اصول و فلسفه لینوکس
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter4/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۴ - استفاده از ابزار های رایج لینوکس
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter5/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۵ - مدیریت سخت افزار
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter6/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۶ - آشنایی با خط فرمان
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter7/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۷ - مدیریت فایل ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter8/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۸ - جستجو، استخراج، و آرشیو کردن داده ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter9/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۹ - کنکاش پردازش ها و پردازش داده ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter10/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۰ - ویرایش فایل ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter11/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۱ - ساخت اسکریپت
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter12/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۲ - فهم مقدماتی امنیت
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter13/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۳ - ساخت کاربر و گروه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter14/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۴ - تنظیم مالکیت و دسترسی ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter15/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۵ - مدیریت اتصالات شبکه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    واژه نامه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        وظایف سیستم عامل
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="وظایف سیستم عامل">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        رایانه های تعبیه شده
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        رایانه های رومیزی و لپ تاپ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        رایانه های سرور
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>P3</h1>
+
+<h2 id="_1">وظایف سیستم عامل</h2>
+<p>رایانه ها نقش های بسیاری در جهان امروز ایفا می‌کنند و روزانه متداول تر و ارزان تر می‌شوند، امروزه این نقش ها چند برابر شده اند. لینوکس می‌تواند به عنوان سیستم عاملی برای اکثر این کاربرد ها که هر کدام از آنها زیرمجموعه پشتیبانی نرم افزاری خود را دارند مورد استفاده قرار گیرد. همچنین برخی از این استفاده ها نیاز به شخصی سازی هسته سیستم عامل دارند. به صورت خلاصه سه مورد از این وظایف را شرح خواهیم داد: رایانه های تعبیه شده درونی(embedded computers) ، رایانه های رومیزی و لپ تاپ، و رایانه های سرور.</p>
+<h3 id="_2">رایانه های تعبیه شده</h3>
+<p>همانگونه که در فصل اول ذکر شد، رایانه های تعبیه شده، دستگاه های تخصصی هستند که برای یک هدف خاص عمل می‌کنند. به عنوان مثال می‌توان به موارد زیر اشاره نمود:</p>
+<p><strong>تلفن های همراه</strong></p>
+<p>تلفن های همراه مدرن در واقع رایانه های با سیستم عامل های ساده تا پیچیده هستند. لینوکس به برخی از این تلفن های همراه که در قالب سیستم عامل Android ارائه می‌شوند قدرت می‌بخشد.</p>
+<p><strong>کتابخوان های الکترونیکی</strong></p>
+<p>این دستگاه ها نیز همانند تلفن های همراه رایانه های تخصصی هستند و از این رو از سیستم عامل جهت قابل استفاده شدن بهره می‌برند. در بسیاری از کتابخوان های الکترونیکی موجود، سیستم عامل تعبیه شده برای آن ها همان لینوکس است(حالا یک نسخه شخصی سازی شده لینوکس و یا همان Android)</p>
+<p><strong>ضبط کننده های ویدیویی دیجیتال</strong></p>
+<p>ضبط کننده های ویدیویی دیجیتال(DVR) که برای ضبط برنامه های تلویزیونی مورد استفاده قرار می‌گیرند در واقع رایانه هایی با نرم افزار تخصصی هستند. برخی از این دستگاه ها، از جمله مدل های محبوب TiVo، از سیستم عامل لینوکس بهره می‌برند.</p>
+<p><strong>رایانه های اوتومبیل</strong></p>
+<p>خودروها سالهاست که از رایانه ها بهره می‌برند. این رایانه ها برای نظارت و کنترل موتور و سایر سیستمهای خودرو درون آن تعبیه شده اند؛ با این حال، خودروهای مدرن اکثراً با رایانه هایی ارائه می‌شوند که به صورت مستقیم توسط کاربر قابل استفاده می‌باشد. این رایانه ها سیستم موقعیت یابی جهانی(GPS) را مدیریت می‌کنند، فاصله خودرو را با اشیاء اطراف آن برای اجتناب از برخورد قیاس می‌کنند، در مواقع ضرور ترمز خودرو را کنترل می‌کنند، کنترل سیستم صوتی را ارائه می‌دهند، دسترسی به اینترنت را فراهم ‌می‌کنند و دنیایی از قابلیت های دیگر که به صورت روز افزون در حال افزوده شدن هستند.</p>
+<p><strong>لوازم خانگی</strong></p>
+<p>تلویزیون ها، یخچال ها، و سایر وسایل خانگی به صورت فزاینده ای از رایانه ها برای بارگیری به روز رسانی های نرم افزار، نظارت بر مصرف انرژی و اهداف دیگر استفاده می‌کنند.</p>
+<p>ممکن است تصور کنید که رایانک های مالشی :) (tablet) نیز درون این دسته بندی قرار گیرند، اما این دستگاه شباهت بیشتری به رایانه های رومیزی و لپ تاپ ها دارد. این تمایز عمدتاً در میزان کنترل کاربر بر سیستم عامل صورت می‌گیرد. دستگاه های تعبیه شده توسط کاربر نهایی قابل تغییر نیستند بلکه فقط می‌توان از آنها استفاده کرد. وظایف مدیریت سیستم که در این کتاب شرح داده شده است در کارخانه یا با استفاده از رابط های کاربری ساده و تخصصی انجام می‌شود.</p>
+<h3 id="_3">رایانه های رومیزی و لپ تاپ</h3>
+<p>زندگی لینوکس با رایانه رومیزی آغاز شد و اگر چه لینوکس بر بازار رایانه های رومیزی تسلط ندارد اما این رایانه ها دارای سخت افزار مناسبی برای شروع یادگیری لینوکس هستند. از منظر مدیریت سیستم لپ تاپ ها نیز همانند رایانه های رومیزی هستند. هر دو نوع رایانه اغلب توسط جامعه کوچکتری برای کارهای تولیدی مانند پردازش متن، مرور وب و مدیریت فایل های دیجیتال مورد استفاده قرار ‌می‌گیرند. برای کوتاه بودن اشاره به این دو نمونه رایانه از اصطلاح دسکتاپ استفاده خواهیم کرد.</p>
+<p>نرم افزار های لینوکس برای چنین وظایفی به صورت گسترده ای موجود و کاملاً خوب هستند، اگرچه برخی افراد همتایان تجاری این نرم افزار ها را ترجیح می‌دهند، ابزارهایی مثل MS Office , Adobe Photoshop ، که برای لینوکس موجود نیستند. و این کشش به چند نرم افزار مشخص تجاری،‌ چرایی و دلیل تسلط روز افزون مایکروسافت بر بازار دسک تاپ را به خوبی توضیح می‌دهد. برخی افراد گمان میکنند که مدل توسعه متن باز به گونه ای نیست تا به سمت ساخت ابزار های رابط کاربری گرافیکی کشیده شود زیرا توسعه دهندگان نرم افزار تمایل دارند تا در حیطه استفاده حرفه ای تمرکز کنند تا به کاربرانی رسیدگی کنند که تواناییی فنی کمتری داشته باشند. نداشتن روشی صریح برای نیاز به توسعه دهندگان برای برآوردن این نیازها، که شرکت های سود بَر تولید می‌کند، پروژه های نرم افزاری منبع باز در قابلیت استفاده از همتایان تجاری خود عقب مانده اند.  این دیدگاه در سطح جهانی مشترک نیست، و در بدترین حالت، پروژه های منبع باز فقط اندکی از همتایان تجاری خود عقب مانده اند.</p>
+<p>دسته نرم افزاری خاصی که در اکثر رایانه های رومیزی مبتنی بر لینوکس لازم است شامل موارد زیر می‌شوند:</p>
+<ul>
+<li>
+<p>سیستم پنجره ای رابط کاربری گرافیکی X (یا به اختصار X)</p>
+</li>
+<li>
+<p>یک محیط میزکار همانند GNOME یا KDE یا Xfce</p>
+</li>
+<li>
+<p>یک مرورگر وب، همانند Mozilla Firefox</p>
+</li>
+<li>
+<p>یک نرم افزار سمت کاربر email ، همانند Mozilla Thunderbird یا Evolution</p>
+</li>
+<li>
+<p>یک ویرایشگر محتوای گرافیکی، مانند GNU Image Manipulation Program(یا به اختصار GIMP)</p>
+</li>
+<li>
+<p>یک بسته تجیهیزات اداری(دفتری)، مانند Apache OpenOffice.org یا مشابه آن LibreOffice</p>
+</li>
+</ul>
+<p>موارد ضروری اضافی بسته به نیاز های کاربر متفاوت است. به عنوان مثال ممکن است یک کاربر به ابزار های ویرایش فایل های چند رسانه ای نیاز داشته باشد، در حالی که ممکن است دیگری به نرم افزار تحلیل داده های علمی نیاز پیدا کند.  توزیع هایی لینوکسی همچون Fedora و Ubuntu معمولاً این ابزار های رایج را به صورت پیش فرض یا به صورت گروهی با انتخاب یک گزینه در زمان نصب واحد، نصب می‌کنند.</p>
+<p>همچنین این توزیع ها، برای نگهداری نسبتاً آسان طراحی شده اند تا کاربران تنها با درصدی از مهارت بتوانند سیستم عامل را نصب کرده و به مرور زمان آن را اجرا کنند.</p>
+<h3 id="_4">رایانه های سرور</h3>
+<p>رایانه های سرور از نظر سخت افزاری می‌توانند با رایانه های رومیزی یکسان هم باشند، اگرچه سرورها وابسته به نوع استفاده از آنها به فضای ذخیره سازیی بزرگتر یا اتصالات شبکه بهتر نیاز دارند. بسیاری از برنامه های سرور و شبکه معروف ابتدا برای یونیکس یا لینوکس نوشته شده اند و این سیستم عامل ها بهترین انتخاب برای اجرای آنهاست. مثلاً برخی از این برنامه ها شامل موارد زیر می‌شوند:</p>
+<ul>
+<li>
+<p>وب سرورها، همانند Apache</p>
+</li>
+<li>
+<p>ایمیل سرورها،‌ همانند Sendmail و Postfix</p>
+</li>
+<li>
+<p>پایگاه های داده،‌ همانند MySql</p>
+</li>
+<li>
+<p>فایل سرورها، همانند Network File System(NFS) و یا Samba</p>
+</li>
+<li>
+<p>پرینت سرورها، مانند Common Unix Printing System(CUPS) یا Samba</p>
+</li>
+<li>
+<p>سرورهای سیستم نام دامنه(DNS)، مانند Berkeley Internet Name Domain(BIND)</p>
+</li>
+<li>
+<p>سرورهای پروتکل تنظیمات میزبان پویا(DHCP)، مانند Internet Systems Consortium's(ISC's) dhcpd (ابزار dhcpd متعلق به ISC)</p>
+</li>
+<li>
+<p>سرور های زمانی، مانند Network Time Protocol (NTP)</p>
+</li>
+<li>
+<p>سرور های ورود از راه دور، همانند Secure Shell(SSH) یا Virtual Network Computing(VNC)</p>
+</li>
+</ul>
+<p>در یک سازمان بزرگ، هر یک از این سرویس ها ممکن است یک رایانه سرور مخصوص خود را داشته باشند. با این وجود، ممکن است یک رایانه بسیاری از این برنامه های سرور را به صورت همزمان اجرا کند.</p>
+<p>بیشتر این سرور ها به رابط کاربری گرافیکی نیازی ندارند، بنابر این رایانه های سرور بدون X، محیط های کاربری، و به صورت سنجیده ای تر نرم افزار های دسکتاپ را که روی رایانه های دسکتاپ پیدا می‌شوند، می‌توانند به کار خود ادامه دهند.  یکی از مزیت های لینوکس نسبت به ویندوز این است که می‌توانید رایانه را بدون این موارد اجرا کنید و حتی می‌توانید آنها را به صورت کامل حذف کنید. انجام این کار یعنی کاهش بار پردازش های اضافی از گردن منابع سخت افزاری همچون RAM. علاوه بر این، اگر موردی مانند X در حال اجرا نیست، هرگونه ایرادات امنیتی که در آن وجود دارد،‌مهم نیستند. برخی توزیع ها، مانند دبیان ، Arch و Gentoo برنامه های تنظیمات رابط کاربری گرافیکی را تغییر داده اند. این مورد باعث می‌شود این توزیع ها مورد پسند کاربران تازه وارد قرار نگیرند، اما اتکا به ابزارهای پیکربندی حالت متنی برای مدیران مجرب رایانه های سرور مشکلی ندارد.</p>
+<p>افرادی که رایانه های بزرگ سرور را نگهداری می‌کنند، از نظر فنی کاملاً ماهر هستند و اغلب می‌توانند مستقیماً در پروژه های سرور مبنع آزاد که از آنها استفاده می‌کنند، فعالیت داشته باشند. این ارتباط تنگاتنگ بین کاربران و برنامه نویسان می‌تواند به نگه داشتن پروژه های سرور در لبه درخواست های روز نرم افزار دنیای واقعی کمک کند.</p>
+<p>توجه داشته باشید که تمایز بین رایانه های رومیزی و سرور موارد مطلقی نیستند، یک رایانه می‌تواند همزمان مخلوطی از هر دو نوع نرم افزار را اجرا کند. به عنوان مثال، شما ممکن است رایانه های دسکتاپ را در یک محیط اداری پیاده سازی کنید تا نرم افزار سرور فایل را اجرا کنید. این پیکربندی کاربران را قادر می‌سازد تا کار خود را راحت تر با دیگران در محیط کار به اشتراک بگذارند. در یک محیط منزل یا دفتر کوچک، اجرای سایر سرورها روی رایانه های رومیزی می‌تواند از نیاز به خرید سخت افزار تخصصی برای تحقق آن نقش ها جلوگیری کند.</p>
+<blockquote>
+<p><strong>ملزومات و فراتر از آن</strong></p>
+<blockquote>
+<p>تاریخچه توسعه لینوکس به یونیکس و به صورت کلی تر به توسعه متن باز متصل است. نرم افزار منبع باز با کد منبع و با حق اصلاح و توزیع مجدد کد منبع تهیه می‌شود. این توانایی شما در استفاده از نرم افزار را به گونه ای تضمین می‌کند که نویسنده اصلی نرم افزار را پشتیبانی نمی‌کند، به شرطی که شما دانش و زمان لازم برای تغییر نرم افزار را داشته باشید، یا منابعی برای استخدام شخص دیگری برای این کار استفاده کنید. این اصول متن باز باعث شده تا محبوبیت نرم افزاری به سمت نرم افزار های عرصه سرور کشیده شود؛ هرچند توسعه دهندگان متن باز کمتر قادر به جلب افکار عمومی به سمت برنامه های طراحی شده برای رایانه های رومیزی بوده است.</p>
+<p><strong>تمرین های پیشنهادی</strong></p>
+<ul>
+<li>
+<p>صفحه Feature وب سایت freebsd که به عنوان یک رقیب لینوکس محسوب می‌شود را مطالعه <a href="https://www.freebsd.org/features.html">کنید</a>.  از کجا تشخیص میتوانید تشخیص دهید که چقدر با لینوکس متفاوت است؟</p>
+</li>
+<li>
+<p>در مورد تعدادی از نرم افزار های متن باز که توجه شما را جلب کرده اند تحقیق کنید،‌ مانند Apache و LibreOffice و یا Mozilla Firefox. ایا لیست قابلیت های این ابزار ها از نظر شما کامل هستند؟ آیا در این ابزار ها کمبود قابلیت هایی را در رقابت با نرم افزار های تجاری می‌بینید؟</p>
+</li>
+</ul>
+</blockquote>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u06a9\u067e\u06cc \u0634\u062f", "clipboard.copy": "\u06a9\u067e\u06cc \u06a9\u0631\u062f\u0646", "search.result.more.one": "1 \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.more.other": "# \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.none": "\u0633\u0646\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f", "search.result.one": "1 \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.other": "# \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.placeholder": "\u0628\u0631\u0627\u06cc \u0634\u0631\u0648\u0639 \u062c\u0633\u062a\u062c\u0648 \u062a\u0627\u06cc\u067e \u06a9\u0646\u06cc\u062f", "search.result.term.missing": "\u0645\u0648\u062c\u0648\u062f \u0646\u06cc\u0633\u062a", "select.version": "\u0627\u0646\u062a\u062e\u0627\u0628 \u0648\u06cc\u0631\u0627\u06cc\u0634"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

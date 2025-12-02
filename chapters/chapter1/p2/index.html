@@ -1,0 +1,902 @@
+
+<!doctype html>
+<html lang="fa" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../docs/images/index/book_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>P2 - ملزومات لینوکس</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vazirmatn:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Vazirmatn";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+
+<link href="../../../fonts/vazirmatn.css" rel="stylesheet" />
+<style>
+  body {
+    font-family: "Vazirmatn" !important;
+  }
+</style>
+
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="rtl" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          پرش به محتویات
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="سرتیتر">
+    <a href="../../.." title="ملزومات لینوکس" class="md-header__button md-logo" aria-label="ملزومات لینوکس" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ملزومات لینوکس
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              P2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="هدایت" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ملزومات لینوکس" class="md-nav__button md-logo" aria-label="ملزومات لینوکس" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    ملزومات لینوکس
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    عنوان
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    محتوا
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../preface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    مقدمه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../help_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    مشارکت در نوشتن کتاب
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱ - انتخاب یک سیستم عامل
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۲ - درک مجوز نرم افزاری
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۳ - بررسی اصول و فلسفه لینوکس
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter4/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۴ - استفاده از ابزار های رایج لینوکس
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter5/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۵ - مدیریت سخت افزار
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter6/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۶ - آشنایی با خط فرمان
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter7/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۷ - مدیریت فایل ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter8/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۸ - جستجو، استخراج، و آرشیو کردن داده ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter9/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۹ - کنکاش پردازش ها و پردازش داده ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter10/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۰ - ویرایش فایل ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter11/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۱ - ساخت اسکریپت
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter12/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۲ - فهم مقدماتی امنیت
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter13/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۳ - ساخت کاربر و گروه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter14/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۴ - تنظیم مالکیت و دسترسی ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter15/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۵ - مدیریت اتصالات شبکه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    واژه نامه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        بررسی رابط کاربری
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="بررسی رابط کاربری">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        استفاده از حالت متنی رابط کاربری
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        استفاده از یک رابط کاربری گرافیکی
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>P2</h1>
+
+<h2 id="_1">بررسی رابط کاربری</h2>
+<p>قبل تر، در رابطه با تفاوت حالت متنی و گرافیکی رابط کاربری اشاره شد. اگرچه بسیاری از کاربران نهایی علاقه بیشتری به محیط کاربری گرافیکی به خاطر راحتی در استفاده دارند، لینوکس سنت قدرتمند رابط متنی را حفظ می‌کند. فصل ششم محیط متنی لینوکس را با جزئیات بیشتری مورد بررسی قرار می‌دهد و در فصل چهارم "استفاده از ابزار های رایج لینوکس" اصول پایه ای عملیات های محیط گرافیکی لینوکس مورد بررسی قرار می‌گیرد. مهم است که شما زمینه پایه ای اصول هر دو محیط گرافیکی و متنی را فراگیرید.</p>
+<h3 id="_2">استفاده از حالت متنی رابط کاربری</h3>
+<p>در گذشته، و یا حتی امروزه، رایانه های لینوکس در حالت متنی راه اندازی می‌شدند. زمانی که سیستم به صورت کامل راه اندازی شد، خروجی نمایشگر متنی ساده برای اعلان ورود به سیستم نمایش میدهد که تقریبا مانند متن زیر است :‌</p>
+<div dir="ltr">
+    <code>
+        Fedora release 31 (Thirty One)<br/>
+        Kernel 5.5.fc21.x86_64 on an x86_64 (tty1)<br/>
+        essentials login:<br/>
+    </code>
+</div>
+
+<p>جزئیات چنین اعلان ورودی در سیستم های مختلف، متفاوت است. این مثال شامل تکه هایی از اطلاعات زیر است :</p>
+<ul>
+<li>
+<p>نام سیستم عامل و نسخه آن : Fedora Linux 31</p>
+</li>
+<li>
+<p>نام رایانه :‌ essentials</p>
+</li>
+<li>
+<p>نام دستگاه سخت افزاری مورد استفاده برای ورود : tty1</p>
+</li>
+<li>
+<p>اعلان ورود :  :login</p>
+</li>
+</ul>
+<p>برای ورود به چنین سیستمی، می‌بایست نام کاربری خودتان را پس از login وارد کنید. بعد از این عمل سیستم از شما رمز عبور رو خواهد خواست که آن را هم می‌بایست تایپ کنید. اگر شما نام کاربری و رمز عبور را به درستی وارد کرده باشید ، اعلان پوسته مانند زیر به شما نمایش داده خواهد شد :</p>
+<div dir="ltr"><code>[rich@essentials:∼]$</code></div>
+
+<p>در این کتاب، اکثر اعلان پوسته برای نوشتن دستورات از قلم انداخته می‌شود اگر چه فقط علامت دلار ($) به عنوان اعلان ورودی دستورات معمولی کاربر مد نظر قرار می‌گیرد. برخی از دستورات می‌بایست با دسترسی کاربر ریشه (root) وارد شوند که مدیریت سیستم عامل را بر عهده دارد، در این شرایط اعلان ورودی دستورات به علامت هشتگ (#) تغییر می‌یابد(در اکثر توزیع های برپایه لینوکس این استاندارد رعایت می‌شود!)، جزئیات اعلان پوسته درون توزیع های مختلف، متفاوت است اما در هر صورت شما می‌توانید دستورات خود را پس از اعلان پوسته وارد نمایید. بعنوان مثال میتوانید دستور ls (که مخفف list است) را برای گرفتن لیست فایل ها درون دایرکتوری در حال استفاده را وارد کنید.</p>
+<blockquote>
+<p>حذف حروف صدا دار، و گاهاً صامت، نام دستورات ابتدایی را کوتاه تر می‌کند تا زمان لازم برای نوشتن یک دستور و اجرای آن به حداقل برسد. اشکال این عمل اینست که برخی اوقات باعث مبهم شدن عملکرد دستور می‌شود ولی به علت کثرت ابزار ها چاره ای نیست.</p>
+</blockquote>
+<p>برای نمونه، دستور ls لیستی از فایل ها را نمایش می‌دهد:</p>
+<div dir="ltr"><code>
+$ ls
+<pre>106792c01.doc   f0101.tif </pre>
+</code></div>
+
+<p>این مثال دو فایل را در مسیر جاری نمایش می‌دهد که یکی از آن ها 106792c01.doc و دیگری f0101.tif می‌باشد. می‌توانید دستورات دیگر، مانند cp برای کپی کردن، rm برای حذف نمودن و یا mv برای جابه‌جا کردن این فایل ها را استفاده کنید. در فصل ششم و هفتم "مدیریت فایل" چنین عملیات هایی روی فایل ها به صورت مفصل توضیح داده می‌شوند. برخی از برنامه های متنی، نمایشگر را برای ارائه به روز رسانی مداوم و یا امکان تعامل به روشی انعطاف پذیر با داده ها تحت کنترل می‌گیرند. تصویر ۱.۱، برای نمونه ویرایشگر متن nano را نمایش می‌دهد که با جزئیات در فصل دهم "ویرایش فایل ها" آن را مورد بررسی قرار می‌دهیم، هنگامی که nano در حال اجراست می‌توانید از کلید های جابه‌جایی صفحه کلید برای جابه‌جا نمودن نشانه‌گر استفاده کنید و با نوشتن متن فایل را تغییر دهید و...</p>
+<p><img alt="تصویری از محیط ویرایشگر nano : تصویر ۱.۱" src="../images/1.1.png" /></p>
+<p><em>تصویر ۱.۱ برخی از ابزار های متنی تمام نمایشگر را در اختیار می‌گیرند.</em></p>
+<p>حتی اگر به صورت گرافیکی وارد سیستم شده اید، می‌توانید از محیط متنی پوسته درون پنجره‌ای(ابزاری) به نام Terminal استفاده کنید. محیط های گرافیکی معمول لینوکس قابلیت اجرای برنامه terminal را دارند که پوسته را درون خود شبیه سازی(اجرا) می‌کنند و می‌توانید به کمک آن ابزار های متنی را اجرا کنید.</p>
+<h3 id="_3">استفاده از یک رابط کاربری گرافیکی</h3>
+<p>تعداد زیادی از کاربران با محیط های گرافیکی نسبت به محیط دستور و متنی راحت ترند. بدین ترتیب بسیاری از سیستم های مدرن لینوکس به صورت پیشفرض با حالت گرافیکی راه اندازی می‌شوند و یک صفحه ورود گرافیکی مانند شکل ۱.۲ را ارئه می‌دهند که می‌توانید در آن نام کاربری خود را از یک لیست انتخاب کنید و یا آن را وارد نمایید و پس از وارد کردن پسورد وارد سیستم شوید :
+<img alt="تصویری از صحفه مدیریت نمایشگر(display manager): تصویر ۱.۲" src="../images/1.2.png" /></p>
+<p><em>تصویر ۱.۲ صفحات ورود گرافیکی در لینوکس همانند صفحات ورود ویندوز و یا مک هستند.</em></p>
+<p>برخلاف ویندوز و مک، لینوکس دنیایی از میزکار (de) ها را در اختیار شما قرار می‌دهد که میتوانید متناسب با توزیع مدنظر خود و قابلیت های نرم افزاری میزکار و میزان مصرف منابع و علائق خود یکی(یا حتی چندین عدد) از آنها را انتخاب و استفاده کنید. میزکار های لینوکس شامل:</p>
+<div dir="ltr">Gnome, KDE Plasma 5, Xfce, Mate, Cinnamon, Budgie, LXDE, LXQt, Enlightenment, KDE Plasma 4, Lumina, CDE, EDE, Razor-qt, K Desktop environment 3, ROX Desktop, ...</div>
+
+<p>بسیاری از میزکار ها دارای تکنولوژی های کمکی هستند که به صورت داخلی(فقط برای همان میزکار) ارائه می‌شوند. در شکل ۱.۲ نماد شخص در بالا و سمت راست نمایشگر به شما اجازه انتخاب تکنولوژی های کمکی ارائه شده مانند screen reader , onscreen keyboard ,... را می‌دهند تا به شما برای ورود به سیستم کمک کند.
+میزکار های لینوکس می‌توانند کاملا متفاوت از یکدیگر باشند اما همگی یک عمل را انجام می‌دهند. شکل ۱.۳ نمایی از میزکار KDE که به صورت پیشفرض در توزیع openSUSE ارائه شده به همراه چند نرم افزار در حال اجرا نمایش می‌دهد. در فصل چهارم محیط های میزکار معمول و ویژگی های آنها با جزئیات مورد بررسی قرار می‌گیرند، اما در حال حاضر دانستن این که همه آنها ویژگی هایی مانند زیر را به ارمغان می‌آورند کافیست:</p>
+<p><img alt="تصویری از میزکار KDE پیشفرض روی openSUSE : تصویر ۱.۳" src="../images/1.3.png" /></p>
+<p><em>تصویر ۱.۳ محیط های میزکار لینوکس کنترل های گرافیکی مختلفی را ایجاد می‌کنند که انتظار اکثر کاربران است.</em></p>
+<p><strong>اجرا کننده های نرم افزار</strong> شما می‌توانید با انتخاب ابزار از منو ابزار آنها را اجرا کنید. معمولاً، یک یا چند منو در بالا، پایین یا اطراف صفحه نمایش وجود دارند. در شکل ۱.۳ با کلیک کردن روی نماد openSUSE در گوشه سمت چپ-پایین صفحه نمایش، منو ابزار ها نمایش داده خواهد شد.</p>
+<p><strong>مدیریت فایل ها</strong> لینوکس مدیر فایل های گرافیکی را که مشابه ویندوز و یا مک هستند را فراهم می‌کند. مانند پنجره ای که در وسط صفحه شکل ۱.۳ نمایش داده شده است.(مدیر فایل گرافیکی Dolphin)</p>
+<p><strong>کنترل پنجره ها</strong> شما میتوانید پنجره های مختلف را با کلیک کردن و کشیدن نوار عنوان آنها را جابه‌جا کنید و با کلیک کردن و گرفتن حاشیه پنجره، اندازه آن را تغییر دهید و کار هایی از این قبیل را انجام دهید.</p>
+<p><strong>چندین میزکار</strong> اکثر میزکار های لینوکس شما را قادر می‌سازند تا چندین میزکار مجازی را فعال کنید تا در هر کدام از آنها برنامه های دلخواهتان را اجرا کنید. این ویژگی برای خلوت نگه داشتن صفحه هنگام اجرای ابزار های متفاوت کار آمد است. به صورت معمول یک نماد برای جابه‌جایی میان این میزکار های مجازی فراهم شده است.</p>
+<p><strong>گزینه های خروج از سیستم</strong> شما میتوانید از نشست(session) لینوکس خود خارج شوید، که به شما اجازه می‌دهد رایانه را خاموش کنید و یا با کاربر دیگری وارد سیستم شوید.</p>
+<p>همینطور که درباره لینوکس اطلاعات بیشتری کسب می‌کنید، کشف می‌کنید که محیط های گرافیکی آن کاملاً انعطاف پذیر هستند. اگر محیط گرافیکی پیش فرض توزیع لینوکسی خود را نمی‌پسندید، می‌توانید آن را تغییر دهید. اگرچه تمامی آنها قابلیت های مشابهی را ارائه می‌دهند، برخی افراد نسبت به میزکار ها اولویت های محکمی دارند. در واقع لینوکس انتخاب هایی را در اختیار شما قرار می‌دهد که در ویندوز و یا مک این آزادی انتخاب را نخواهید داشت، پس برای امتحان چندین میزکار مختلف احساس آزادی داشته باشید.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u06a9\u067e\u06cc \u0634\u062f", "clipboard.copy": "\u06a9\u067e\u06cc \u06a9\u0631\u062f\u0646", "search.result.more.one": "1 \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.more.other": "# \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.none": "\u0633\u0646\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f", "search.result.one": "1 \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.other": "# \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.placeholder": "\u0628\u0631\u0627\u06cc \u0634\u0631\u0648\u0639 \u062c\u0633\u062a\u062c\u0648 \u062a\u0627\u06cc\u067e \u06a9\u0646\u06cc\u062f", "search.result.term.missing": "\u0645\u0648\u062c\u0648\u062f \u0646\u06cc\u0633\u062a", "select.version": "\u0627\u0646\u062a\u062e\u0627\u0628 \u0648\u06cc\u0631\u0627\u06cc\u0634"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

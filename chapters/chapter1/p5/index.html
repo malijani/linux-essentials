@@ -1,0 +1,1186 @@
+
+<!doctype html>
+<html lang="fa" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../docs/images/index/book_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>P5 - ملزومات لینوکس</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vazirmatn:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Vazirmatn";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+
+<link href="../../../fonts/vazirmatn.css" rel="stylesheet" />
+<style>
+  body {
+    font-family: "Vazirmatn" !important;
+  }
+</style>
+
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="rtl" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#virtualbox" class="md-skip">
+          پرش به محتویات
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="سرتیتر">
+    <a href="../../.." title="ملزومات لینوکس" class="md-header__button md-logo" aria-label="ملزومات لینوکس" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ملزومات لینوکس
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              P5
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="هدایت" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ملزومات لینوکس" class="md-nav__button md-logo" aria-label="ملزومات لینوکس" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    ملزومات لینوکس
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    عنوان
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    محتوا
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../preface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    مقدمه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../help_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    مشارکت در نوشتن کتاب
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱ - انتخاب یک سیستم عامل
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۲ - درک مجوز نرم افزاری
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۳ - بررسی اصول و فلسفه لینوکس
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter4/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۴ - استفاده از ابزار های رایج لینوکس
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter5/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۵ - مدیریت سخت افزار
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter6/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۶ - آشنایی با خط فرمان
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter7/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۷ - مدیریت فایل ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter8/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۸ - جستجو، استخراج، و آرشیو کردن داده ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter9/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۹ - کنکاش پردازش ها و پردازش داده ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter10/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۰ - ویرایش فایل ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter11/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۱ - ساخت اسکریپت
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter12/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۲ - فهم مقدماتی امنیت
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter13/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۳ - ساخت کاربر و گروه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter14/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۴ - تنظیم مالکیت و دسترسی ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter15/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۵ - مدیریت اتصالات شبکه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    واژه نامه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#virtualbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        انتخاب و مجازی سازی یک توزیع با VirtualBox
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="انتخاب و مجازی سازی یک توزیع با VirtualBox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        انتخاب توزیع
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        دانلود توزیع
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtualbox_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        دانلود VirtualBox
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        نصب و استفاده
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>P5</h1>
+
+<h2 id="virtualbox">انتخاب و مجازی سازی یک توزیع با VirtualBox</h2>
+<p>** قبل از دانلود هر نرم افزار یا توزیعی در ابتدا مطمعن شوید که CPU شما از مجازی سازی پشتیبانی می‌کند، برای این کار می‌توانید به <a href="https://www.technorms.com/8208/check-if-processor-supports-virtualization">این مقاله</a> مراجعه کنید. سپس معماری سیستم عامل در حال اجرا را مشخص کنید و ابزارها و توزیع مورد نظر را با این معماری دانلود کنید، برای فهمیدن معماری سیستم عامل می‌توانید به <a href="https://www.technorms.com/8208/check-if-processor-supports-virtualization">این راهنما</a> مراجعه کنید.</p>
+<h3 id="_1">انتخاب توزیع</h3>
+<p>با مراجعه به <a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg">خط زمانی تولید و انتشار توزیع های لینوکس</a> درک خواهید کرد که دنیای گنو/لینوکس پر از توزیع های متفاوت است که دلیل آن نیاز متفاوت افراد در زمینه های مختلف بوده! بصورت عمده ای می‌توان نیاز اشخاص برای استفاده روزانه از یک سیستم را در دسته بندی های حداقلی زیر مشخص کرد:</p>
+<ul>
+<li>مطابقت با سخت افزار</li>
+<li>فراهم نمودن محیط استفاده</li>
+<li>دارا بودن برنامه های مدرن</li>
+<li>استفاده راحت</li>
+<li>نصب آسان</li>
+<li>امنیت مناسب</li>
+<li>...</li>
+</ul>
+<p>هر شخص دارای یک سری نیازهای خاصی است که می‌بایست متناسب با آن توزیعی در جهت رفع نیازهای خود انتخاب کند. هر توزیع رویه خاص خودش را مشخص کرده و شما می‌توانید با مراجعه به وبسایت مرجع توزیع در مورد فلسفه، نحوه انتشار، میزان مهارت برای استفاده، میزان سخت افزار مورد نیاز، و موارد مختلف دیگر را مورد بررسی قرار داده و توزیع را رد یا استفاده کنید. یا میتوانید از نمونه <a href="https://distrowatch.com/">جوامع دیگر</a> برای گرفتن اطلاعات مورد نیاز خود استفاده کنید. مطابقت با سخت افزار یکی از مهم ترین موارد است چرا که شما در ازای آن هزینه کرده اید و انتظار استفاده از تمامی قابلیت های سخت افزاری سیستم را دارید.</p>
+<p>به هر حال در این دوره حد میانی برای استفاده در نظر گرفته شده و به دلیل مجازی سازی مطابقت سخت افزاری اهمیتی ندارد. پس هدف ما فراهم کردن یک محیط عمومی، صرفاً برای یادگیری و آشنا شدن با محیط لینوکس و یادگیری خط فرمان برای استفاده در موارد مختلف است. توزیع های مختلفی وجود دارد که می‌توانید از آنها در این زمینه بهره ببرید. لیست من برای انتخاب توزیع مناسب شامل موارد زیر است :</p>
+<ul>
+<li>نصب و استفاده آسان</li>
+<li>توانایی استفاده از سیستم با هر سطحی از دانش</li>
+<li>محیط گرافیکی مناسب</li>
+<li>ابزار های پیش فرض کاربردی</li>
+<li>قابلیت استفاده از انواع مختلف نرم افزارها</li>
+<li>جامعه گسترده(تا در صورت بروز مشکل هر چه سریعتر به جواب برسیم)</li>
+<li>معمول و دارای پشتیبانی مناسب</li>
+<li>مصرف منابع سخت افزاری متوسط</li>
+</ul>
+<p>بعد از این همه به توزیع <a href="https://ubuntu.com/desktop">اوبونتو</a> می‌رسیم که توسط شرکت Cannonical برای چنین استفاده هایی طراحی شده و برای هر نوع کاربری متناسب است. هر چند می‌توانید متناسب با نیاز خود توزیع دیگری را انتخاب کنید و از آن استفاده کنید چرا که هر توزیع متناسب با ذائقه کاربری خود مطالب استفاده و راهنماهای مختلف توزیع را در وبسایت مرجع خود فراهم میکند! پس لطف کنید با دقت مطالب مرتبط با توزیع و راهنماهای فراهم شده توسط جامعه کاربری توزیع را مورد بررسی قرار دهید تا موارد مختلف استفاده از آن را درک کنید. اما محیط آموزشی این دوره اوبونتو خواهد بود.</p>
+<p>اما میزکار پیش فرضی که همراه با توزیع ابونتو در وبسایت رسمی آن ارائه شده Gnome است ولی یکی از موارد انتخاب توزیع ما مصرف منابع سخت افزاری متوسط(رو به پایین) است! در حالی که میزکار Gnome مصرف منابع بالایی دارد. هرچند که میتوان به راحتی میزکار توزیع را تغییر داد اما راه های بهتری هم برای دانلود توزیع با یک میزکار پیشفرض متناسب با خواسته وجود دارد. گاهاً خود کمپانی ارائه دهنده و گاهاً جامعه کاربری توزیع را با میزکاری غیر از میزکار رسمی توزیع ارائه میدهند که به آنها  spin یا flavour گفته می‌شود؛ یعنی توزیع یکسان است اما محیط گرافیکی و ابزارهای خط اصلی تولید توزیع دچار تغییر شده اند! در مورد اوبونتو جامعه کاربری اسپین(چرخش؟) های متفاوت را ارائه می‌دهد که متناسب با میز کار نام گذاری شده اند. برای بررسی این اسپین ها می‌توانید به <a href="https://ubuntu.com/download/flavours">این صفحه</a> مراجعه کنید.</p>
+<p>در این دوره اوبونتو با میزکار xfce مورد استفاده قرار خواهد گرفت زیرا محیط xfce یک رابط کاربری گرافیکی سبک و جذاب و با قابلیت بالای شخصی سازی است. اگر سیستم شما سخت افزار مناسبی را داراست و توانایی استفاده از میزکارهای مختلف را دارید در این انتخاب آزادانه عمل کنید. به ترکیب های زیر دقت کنید:</p>
+<div dir="ltr">
+    <ul>
+        <li><a href="https://xubuntu.org/">Ubuntu + Xfce = Xubuntu</a></li>
+        <li><a href="https://kubuntu.org/">Ubuntu + KDE = Kubuntu</a></li>
+        <li><a href="https://lubuntu.me/">Ubuntu + Lxde/Lxqt = Lubuntu</a></li>
+        <li><a href="https://ubuntubudgie.org/">Ubuntu + Budgie = Ubuntu Budgie</a></li>
+        <li><a href="https://ubuntu-mate.org/">Ubuntu + Mate = Ubuntu Mate</a></li>
+    </ul>
+</div>
+
+<p>البته اوبونتو برای موارد استفاده مختلف دیگر برای کارکردن حرفه ای با محتوای چندرسانه‌ای (multimedia) یا توزیعی یک پارچه برای کاربران چینی دو نمونه طعم/چرخش(flavour/spin) دیگر را با نام های Ubuntu Studio و Ubuntu Kylin ارائه می‌دهد.</p>
+<p>موارد مشابه را می‌توانید در جوامع توزیع ها مختلف دیگر مشاهده کنید ؛ مثلاً توزیع فدورا هم به صورت پیشفرض با میزکار Gnome ارائه می‌شود که با نام Fedora Workstation هم شناخته می‌شود اما سایر میزکارها و سایر موارد استفاده را نیز پوشش می‌دهد:</p>
+<div dir="ltr">
+    <ul>
+        <li><a href="https://getfedora.org/en/workstation/">Fedora Workstation</a></li>
+        <li><a href="https://spins.fedoraproject.org">Fedora Spins</a></li>
+        <li><a href="https://labs.fedoraproject.org">Fedora Labs</a></li>
+        <li><a href="https://alt.fedoraproject.org/">Fedora Alternative Downloads</a></li>
+    </ul>
+</div>
+
+<h3 id="_2">دانلود توزیع</h3>
+<p>برای دانلود توزیع کافیست به وبسایت رسمی آن مراجعه کنید. وبسایت مرجع توزیع را با یک جست و جوی ساده خواهید یافت. برای دانلود توزیع زوبونتو هم به همین منوال به <a href="https://xubuntu.org/">وبسایت رسمی</a> آن مراجعه کنید. در بخش <a href="https://xubuntu.org/download">دانلود</a> آن نسخه های مختلف برای دانلود ارائه شده و حتماً نسخه LTS که مخفف Long Term Support و به معنای پشتیبانی طولانی مدت است را دانلود نمایید. امروز در سال ۲۰۲۰ نسخه 18.04 با پشتیبانی طولانی مدت ارائه شده که همین مورد را انتخاب می‌کنیم.</p>
+<p><img alt="بخش دانلود زوبونتو" src="../images/1.5/xubuntu-download.png" /></p>
+<p>توجه کنید گزینه دانلود با Torrent و یا به صورت معمولی برای شما فراهم شده ؛ اگر با Torrent آشنایی ندارید، میتوانید برای دانلود توزیع به صورت معمولی به لیست Mirror ها مراجعه کرده و با انتخاب یکی از آنها لیستی از فایل های دانلود ارائه شده که متناسب با نیاز خود یکی از آنها را دانلود میکنیم؛ توجه کنید که آخرین نسخه ارائه شده توزیع را متناسب با معماری CPU خود دانلود کنید (amd64 : 64bit , i386 : 32bit) :</p>
+<p><img alt="میرور دانلود زوبونتو" src="../images/1.5/xubuntu-download-mirror.png" /></p>
+<h3 id="virtualbox_1">دانلود VirtualBox</h3>
+<p>برای دانلود VirtualBox می‌توانید به <a href="https://www.virtualbox.org/">وبسایت مرجع</a> آن مراجعه کنید، اگر نیاز به بررسی نسخه های مختلف آن دارید و مجموعه فایل های متفاوت آن را برای نصب نیاز دارید میتوانید به <a href="https://download.virtualbox.org/virtualbox/">زیرمجموعه دانلود</a> آن مراجعه کنید، آخرین نسخه را متناسب با نیاز خود انتخاب کرده و فایل های مورد نظر را دانلود کنید؛ موارد زیر را برای استفاده دانلود کنید:</p>
+<div dir="ltr">
+    <ul>
+        <li><b>VirtualBox-XXXX-Win.exe</b></li>
+        <li><b>Oracle_VM_VirtualBox_Extension_Pack-XXXX.vbox-extpack</b></li>
+        <li><b>VBoxGuestAdditions_XXXX.iso</b></li>
+    </ul>
+</div>
+
+<p>که در حال حاضر نسخه <a href="https://download.virtualbox.org/virtualbox/6.1.4/">6.1.4</a> موجود و قابل استفاده است.</p>
+<p>** اگر سیستم شما با معماری 32bit است از نسخه <a href="https://download.virtualbox.org/virtualbox/5.2.38/">5.2</a> مجازی ساز استفاده کنید.</p>
+<h3 id="_3">نصب و استفاده</h3>
+<p>در نهایت ما برای نصب و مجازی سازی توزیع زوبونتو به موارد زیر نیاز داریم:</p>
+<p><img alt="تصویر 1.5.1" src="../images/1.5/1.5.1.png" /></p>
+<p><strong>نصب VirtualBox</strong></p>
+<p>در ابتدا شروع به نصب ابزار مجازی ساز VirtualBox می‌کنیم:</p>
+<p><img alt="تصویر 1.5.2" src="../images/1.5/1.5.2.png" /></p>
+<p><img alt="تصویر 1.5.3" src="../images/1.5/1.5.3.png" /></p>
+<p><img alt="تصویر 1.5.6" src="../images/1.5/1.5.6.png" /></p>
+<p><img alt="تصویر 1.5.4" src="../images/1.5/1.5.4.png" /></p>
+<p><img alt="تصویر 1.5.5" src="../images/1.5/1.5.5.png" /></p>
+<p><img alt="تصویر 1.5.7" src="../images/1.5/1.5.7.png" /></p>
+<p><img alt="تصویر 1.5.8" src="../images/1.5/1.5.8.png" /></p>
+<p><img alt="تصویر 1.5.9" src="../images/1.5/1.5.9.png" /></p>
+<p>در حین نصب پنجره ای با محتویات زیر به شما نمایش داده می‌شود؛ برای پشتیبانی بهتر VirtualBox این موارد را نصب کنید :</p>
+<p><img alt="تصویر 1.5.10" src="../images/1.5/1.5.10.png" /></p>
+<p><img alt="تصویر 1.5.11" src="../images/1.5/1.5.11.png" /></p>
+<p><img alt="تصویر 1.5.12" src="../images/1.5/1.5.12.png" /></p>
+<p><img alt="تصویر 1.5.13" src="../images/1.5/1.5.13.png" /></p>
+<p><strong>افزودن extension pack</strong></p>
+<p>برای استفاده بهتر از مجازی ساز بهتر است فایل extension pack را اضافه کنیم:</p>
+<p><img alt="تصویر 1.5.14" src="../images/1.5/1.5.14.png" /></p>
+<p><img alt="تصویر 1.5.15" src="../images/1.5/1.5.15.png" /></p>
+<p><img alt="تصویر 1.5.16" src="../images/1.5/1.5.16.png" /></p>
+<p><img alt="تصویر 1.5.17" src="../images/1.5/1.5.17.png" /></p>
+<p><img alt="تصویر 1.5.18" src="../images/1.5/1.5.18.png" /></p>
+<p><img alt="تصویر 1.5.19" src="../images/1.5/1.5.19.png" /></p>
+<p><img alt="تصویر 1.5.20" src="../images/1.5/1.5.20.png" /></p>
+<p><img alt="تصویر 1.5.21" src="../images/1.5/1.5.21.png" /></p>
+<p><img alt="تصویر 1.5.22" src="../images/1.5/1.5.22.png" /></p>
+<p><strong>ساخت سیستم مجازی</strong></p>
+<p>برای نصب یک سیستم عامل در ابتدا باید مشخصات آن را تنظیم کنید(در واقع باید یک رایانه مجازی بسازید):</p>
+<p>در ابتدا روی دکمه New در محیط مجازی ساز کلیک کنید :</p>
+<p><img alt="تصویر 1.5.23" src="../images/1.5/1.5.23.png" /></p>
+<p>در پنجره باز شده، نام سیستم عامل/توزیع مد نظر خود را وارد کنید:</p>
+<p><img alt="تصویر 1.5.24" src="../images/1.5/1.5.24.png" /></p>
+<p>به صورت خودکار نوع و معماری سیستم عامل انتخاب می‌شود که توانایی تغییر آنها را نیز دارید.</p>
+<p><img alt="تصویر 1.5.25" src="../images/1.5/1.5.25.png" /></p>
+<p>در مرحله بعد میزان رم مورد نیاز ماشین مجازی را به آن تخصیص دهید. توجه کنید که از محدوده سبزی که خود ابزار مشخص کرده فراتر نروید و همچنین تمام سخت افزار خود را معطوف به مجازی ساز نکنید! چرا که در حین اجرای سیستم عامل مجازی سازی شده، سیستم عامل اصلی شما نیز در حال اجراست. پس در تقسیم سخت افزار، عادلانه عمل کنید.</p>
+<p><img alt="تصویر 1.5.26" src="../images/1.5/1.5.26.png" /></p>
+<p>در مرحله بعد می‌بایست یک فایل دیسک مجازی را بسازید و یا از فایل های موجود انتخاب کنید و یا سیستم مجازی خود را بدون هیچ فضای ذخیره سازی اطلاعات راه اندازی کنید. گزینه پیشفرض برای ساخت این فایل، مد نظر ماست:</p>
+<blockquote>
+<p>دیسک مجازی در سیستم مجازی مانند یک هارد دیسک واقعی برای یک سیستم واقعی عمل میکند. شما توانایی ساخت بیشمار دیسک مجازی را خواهید داشت اما باید توجه کنید که فایل دیسک مجازی روی سیستم عامل اصلی شما ذخیره شده و با حجیم تر شدن آن فضای بیشتری از هارد دیسک سیستم عامل اصلی شما گرفته می‌شود.</p>
+</blockquote>
+<p><img alt="تصویر 1.5.27" src="../images/1.5/1.5.27.png" /></p>
+<p>در انتخاب نوع فایل دیسک مجازی ؛ گزینه پیشفرض را انتخاب کنید:</p>
+<p><img alt="تصویر 1.5.28" src="../images/1.5/1.5.28.png" /></p>
+<p>در مرحله بعد گزینه پیشفرض را انتخاب کنید تا حجم فایل دیسک مجازی با استفاده از آن افزایش پیدا کند!(اگر Fixed size را انتخاب کنید، فایل دیسک مجازی با حجم کامل مشخص شده روی سیستم واقعی شما ساخته خواهد شد.):</p>
+<p><img alt="تصویر 1.5.29" src="../images/1.5/1.5.29.png" /></p>
+<p>در این مرحله توانایی تغییر نام فایل دیسک مجازی را دارید، و همچنین می‌توانید سقف حجم هارد دیسک مجازی را انتخاب کنید که متناسب با منابع موجود و کاری که با سیستم انجام می‌دهید مشخص می‌شود. برای xubuntu حجم حداقلی 7.5 گیگابایت در نظر گرفته شده(اما من 10 گیگابایت به هارد دیسک مجازی اختصاص داده ام):</p>
+<p><img alt="تصویر 1.5.30" src="../images/1.5/1.5.30.png" /></p>
+<p>و در نهایت سیستم مجازی شما ساخته شده و آماده استفاده است:</p>
+<p><img alt="تصویر 1.5.31" src="../images/1.5/1.5.31.png" /></p>
+<p><strong>تنظیم اولیه سیستم مجازی</strong></p>
+<p>برای تنظیم ماشین مجازی مورد نظر، مانند تصویر زیر ماشین مجازی خود را انتخاب کرده و روی دکمه Settings کلیک کنید :</p>
+<p><img alt="تصویر 1.5.32" src="../images/1.5/1.5.32.png" /></p>
+<p><img alt="تصویر 1.5.33" src="../images/1.5/1.5.33.png" /></p>
+<p>وارد بخش Storage شده و در قسمت  IDE روی دیسک خالی تعبیه شده کلیک کنید :</p>
+<p><img alt="تصویر 1.5.34" src="../images/1.5/1.5.34.png" /></p>
+<p>مانند تصاویر زیر فایل xubuntu image را انتخاب کنید:</p>
+<p><img alt="تصویر 1.5.35" src="../images/1.5/1.5.35.png" /></p>
+<p><img alt="تصویر 1.5.36" src="../images/1.5/1.5.36.png" /></p>
+<p>می‌بینید که با موفقیت اضافه شد:</p>
+<p><img alt="تصویر 1.5.37" src="../images/1.5/1.5.37.png" /></p>
+<p>در قدم بعدی می‌توانید Video Memory را در بخش Display افزایش دهید:</p>
+<p><img alt="تصویر 1.5.38" src="../images/1.5/1.5.38.png" /></p>
+<p><img alt="تصویر 1.5.39" src="../images/1.5/1.5.39.png" /></p>
+<p>برای اطمینانی دوباره می‌بینید که در مشخصات ماشین مجازی بخش Storage تنظیمات به درستی تغییر کرده :</p>
+<p><img alt="تصویر 1.5.40" src="../images/1.5/1.5.40.png" /></p>
+<p><strong>راه اندازی و نصب توزیع</strong></p>
+<p>برای راه اندازی ماشین مجازی خود؛ آن را انتخاب کرده و روی دکمه Start کلیک کنید:</p>
+<p><img alt="تصویر 1.5.41" src="../images/1.5/1.5.41.png" /></p>
+<p><img alt="تصویر 1.5.42" src="../images/1.5/1.5.42.png" /></p>
+<p>برای استفاده توزیع زنده می‌توانید گزینه Try Xubuntu را انتخاب کنید. در سایر توزیع ها ابتدا توزیع به صورت زنده راه اندازی می‌شود سپس می‌توانید نصاب را همانند یک ابزار اجرا کنید. به هر حال قصد ما نصب توزیع زوبونتو است پس گزینه Install Xubuntu را انتخاب می‌کنیم:</p>
+<p><img alt="تصویر 1.5.43" src="../images/1.5/1.5.43.png" /></p>
+<p>در این مرحله چینش صفحه کلید خود را مشخص کنید که گزینه پیشفرض مناسب است:</p>
+<p><img alt="تصویر 1.5.44" src="../images/1.5/1.5.44.png" /></p>
+<p>به صورت پیشفرض گزینه دانلود آپدیت ها فعال شده ؛ نصب ابزار های اضافی برای بهره وری بهتر از سیستم به صورت اختیاری است ولی بهتر است که این گزینه را هم فعال کنید :</p>
+<blockquote>
+<p>توجه کنید که سیستم شما برای اعمال این موارد می‌بایست به اینترنت متصل باشد! برای اتصال مجازی ساز به اینترنت کافیست سیستم عامل اصلی خود را به اینترنت متصل کنید.</p>
+</blockquote>
+<p><img alt="تصویر 1.5.45" src="../images/1.5/1.5.45.png" /></p>
+<p>در مرحله بعد تنظیمات چینش دیسک نمایان می‌شود که در حال حاضر بعلت این که هنوز دانشی در مورد ساختار فایل سیستم لینوکس و چینش دیسک در این محیط را نداریم گزینه پیش فرض که مرتبط با پاک کردن کامل دیسک و نصب زوبونتو است را انتخاب می‌کنیم(لطفاً روی سیستم واقعی این عمل را انجام ندهید چرا که تمام فایل های شما حذف خواهد شد ولی روی سیستم مجازی تازه ساخته شده فایلی برای حذف شدن وجود ندارد ):</p>
+<p><img alt="تصویر 1.5.46" src="../images/1.5/1.5.46.png" /></p>
+<p>پنجره بعد اعلان عملیات های روی حافظه است که برای انجام آن ها از شما اجازه می‌خواهد:</p>
+<p><img alt="تصویر 1.5.47" src="../images/1.5/1.5.47.png" /></p>
+<p>در این مرحله منطقه خود را انتخاب کنید(برای تنظیمات محلی و زمان سیستم):</p>
+<p><img alt="تصویر 1.5.48" src="../images/1.5/1.5.48.png" /></p>
+<p>در مرحله بعد مانند تصاویر نمایش داده شده مشخصات کاربری خود را وارد کنید؛ لطفا username و password خود را به خاطر بسپارید :</p>
+<p><img alt="تصویر 1.5.49" src="../images/1.5/1.5.49.png" /></p>
+<p><img alt="تصویر 1.5.50" src="../images/1.5/1.5.50.png" /></p>
+<p>مراحل نصب تمام شد! صبر کنید تا پروسه نصب تکمیل شود :</p>
+<p><img alt="تصویر 1.5.51" src="../images/1.5/1.5.51.png" /></p>
+<p>شما توانایی رد کردن مراحل غیر ضروری را دارید؛ که شامل مواردی مثل دانلود بسته ها برای بروز رسانی سیستم و یا دانلود بسته های زبان می‌شود:</p>
+<p><img alt="تصویر 1.5.52" src="../images/1.5/1.5.52.png" /></p>
+<p><img alt="تصویر 1.5.53" src="../images/1.5/1.5.53.png" /></p>
+<p><img alt="تصویر 1.5.54" src="../images/1.5/1.5.54.png" /></p>
+<p>پس از اتمام نصب پنجره ای مانند تصویر زیر نمایش داده می‌شود که درخواست راه اندازی دوباره سیستم را دارد؛‌ در این مرحله سیستم مجازی خود را با بستن پنجره اصلی مجازی سازی خاموش کنید:</p>
+<p><img alt="تصویر 1.5.55" src="../images/1.5/1.5.55.png" /></p>
+<p><img alt="تصویر 1.5.56" src="../images/1.5/1.5.56.png" /></p>
+<p><img alt="تصویر 1.5.57" src="../images/1.5/1.5.57.png" /></p>
+<p>بعد از خاموش کردن سیستم ؛ دوباره آن را راه اندازی کنید:</p>
+<p><img alt="تصویر 1.5.58" src="../images/1.5/1.5.58.png" /></p>
+<p><img alt="تصویر 1.5.59" src="../images/1.5/1.5.59.png" /></p>
+<p>در این قسمت رمز عبور خود را که هنگام نصب تنظیم نموده اید وارد کنید:</p>
+<p><img alt="تصویر 1.5.60" src="../images/1.5/1.5.60.png" /></p>
+<p><img alt="تصویر 1.5.61" src="../images/1.5/1.5.61.png" /></p>
+<p>می‌بینید که سیستم شما به درستی نصب شده و می‌توانید از آن استفاده کنید:</p>
+<p><img alt="تصویر 1.5.62" src="../images/1.5/1.5.62.png" /></p>
+<p>اما با تغییر اندازه پنجره اصلی؛ اندازه خروجی تصویر سیستم مجازی تغییر نمی‌کند:</p>
+<p><img alt="تصویر 1.5.63" src="../images/1.5/1.5.63.png" /></p>
+<p><strong>پویا کردن خروجی تصویر سیستم مجازی</strong></p>
+<p>برای تغییر اندازه خروجی تصویر با تغییر اندازه پنجره اصلی نیاز به نصب VBoxGuestAdditions داریم. همانند مراحل قبل می‌بایست فایل تصویر Guest Additions مانند یک دیسک نوری به سیستم مجازی شناسایی شود. برای عملکرد سریع تر می‌توانید روی نشانک دیسک در قسمت پایین سمت راست پنجره اصلی راست کلیک کنید:</p>
+<p><img alt="تصویر 1.5.64" src="../images/1.5/1.5.64.png" /></p>
+<p>گزینه انتخاب تصویر دیسک را انتخاب کنید:</p>
+<p><img alt="تصویر 1.5.65" src="../images/1.5/1.5.65.png" /></p>
+<p>فایل VBoxGuestAdditions را انتخاب کنید:</p>
+<p><img alt="تصویر 1.5.66" src="../images/1.5/1.5.66.png" /></p>
+<p>پس از انتخاب دیسک، مانند یک دیسک نوری واقعی در سیستم عامل مجازی قابل استفاده است، با دوبار کلیک روی آن عملیات سوار(mount) شدن دیسک انجام می‌شود و پنجره مدیر فایل که محتویات دیسک را نمایش می‌دهد باز خواهد شد:</p>
+<p><img alt="تصویر 1.5.67" src="../images/1.5/1.5.67.png" /></p>
+<p>در قسمت خالی پنجره مدیر فایل باز شده که محتوای دیسک را نمایش می‌دهد کلیک راست کنید و گزینه Open Terminal Here را باز کنید :</p>
+<p><img alt="تصویر 1.5.68" src="../images/1.5/1.5.68.png" /></p>
+<p><img alt="تصویر 1.5.69" src="../images/1.5/1.5.69.png" /></p>
+<p>همانند تصویر زیر خط فرمان با پوسته بش برای شما اجرا می‌شود که مسیر جاری آن در محلی است که دیسک نوری سوار شده است :</p>
+<p><img alt="تصویر 1.5.70" src="../images/1.5/1.5.70.png" /></p>
+<p>با اجرای دستور</p>
+<div dir="ltr">
+    <code>sudo -s</code>
+</div>
+
+<p>دسترسی پوسته را به کاربر ریشه(root) تغییر دهید و سپس رمز کاربری خود را وارد کنید(رمز کاربری در محیط خط فرمان به صورت پیشفرض نمایش داده نمی‌شود):</p>
+<p><img alt="تصویر 1.5.71" src="../images/1.5/1.5.71.png" /></p>
+<p>می‌توانید با اجرای دستور</p>
+<div dir="ltr">
+    <code>sudo -s</code>
+</div>
+
+<p>محتویات مسیر جاری را ببینید که باید مانند تصویر زیر باشد :‌</p>
+<p><img alt="تصویر 1.5.72" src="../images/1.5/1.5.72.png" /></p>
+<p>با اجرای دستور</p>
+<div dir="ltr">
+    <code>./VBoxLinuxAdditions.run</code>
+</div>
+
+<p>در مسیر جاری می‌توانید ماژول های مورد نیاز سیستم برای تغییر اندازه خروجی و عملکرد های مختلف دیگر را نصب کنید :</p>
+<p><img alt="تصویر 1.5.73" src="../images/1.5/1.5.73.png" /></p>
+<p><img alt="تصویر 1.5.74" src="../images/1.5/1.5.74.png" /></p>
+<p>احتمالاً نصاب ماژول های VirtualBox هشداری مانند تصویر زیر دهد و در متن هشدار ابزار های مورد نیاز را برای ساخت ماژول کرنل مورد نظر نام ببرد که در این جا به ابزار های gcc‌, make, perl نیاز دارد:</p>
+<p><img alt="تصویر 1.5.75" src="../images/1.5/1.5.75.png" /></p>
+<p>برای نصب ابزار ها در ابتدا به اینترنت متصل شوید و دستور</p>
+<div dir="ltr">
+    <code>apt update</code>
+</div>
+
+<p>را اجرا کنید تا پایگاه اطلاعات نرم افزاری شما با سرور های میرور مورد استفاده یکسان شود(بروز رسانی مخازن):</p>
+<p><img alt="تصویر 1.5.76" src="../images/1.5/1.5.76.png" /></p>
+<p><img alt="تصویر 1.5.77" src="../images/1.5/1.5.77.png" /></p>
+<p>سپس دستور</p>
+<div dir="ltr">
+    <code>apt install gcc make perl</code>
+</div>
+
+<p>را اجرا کنید تا ابزار های مورد نیاز نصب شوند :</p>
+<p><img alt="تصویر 1.5.78" src="../images/1.5/1.5.78.png" /></p>
+<p><img alt="تصویر 1.5.79" src="../images/1.5/1.5.79.png" /></p>
+<p>سپس دوباره دستور</p>
+<div dir="ltr">
+    <code>./VBoxLinuxAdditions.run</code>
+</div>
+<p>را اجرا کنید تا ماژول های مورد نیاز سیستم مجازی ساخته شوند:</p>
+<p><img alt="تصویر 1.5.80" src="../images/1.5/1.5.80.png" /></p>
+<p><img alt="تصویر 1.5.81" src="../images/1.5/1.5.81.png" /></p>
+<p>و در نهایت دستور</p>
+<div dir="ltr">
+    <code>reboot</code>
+</div>
+
+<p>را اجرا کنید تا سیستم دوباره راه اندازی شده و تغییرات در سطح هسته اعمال شود:</p>
+<p><img alt="تصویر 1.5.82" src="../images/1.5/1.5.82.png" /></p>
+<p>می‌بینید که پس از راه اندازی و ورود به سیستم ؛ اندازه خروجی با تغییر اندازه پنجره اصلی مجازی ساز تغییر می‌کند:</p>
+<p><img alt="تصویر 1.5.83" src="../images/1.5/1.5.83.png" /></p>
+<p><img alt="تصویر 1.5.85" src="../images/1.5/1.5.85.png" /></p>
+<p><img alt="تصویر 1.5.84" src="../images/1.5/1.5.84.png" /></p>
+<p><strong>تنظیمات جانبی</strong></p>
+<p>سیستم مجازی را خاموش کنید و مانند تصویر زیر وارد تنظیمات آن شوید:</p>
+<p><img alt="تصویر 1.5.86" src="../images/1.5/1.5.86.png" /></p>
+<p>در دسته تنظیمات General وارد بخش Advanced شده و گزینه های اشتراک Clipboard و انتقال فایل با Drag'n'Drop را به Bidirectional تغییر دهید تا توانایی انتقال موارد مختلف از سیستم عامل اصلی به سیستم عامل مجازی را داشته باشید :</p>
+<p><img alt="تصویر 1.5.87" src="../images/1.5/1.5.87.png" /></p>
+<p><img alt="تصویر 1.5.88" src="../images/1.5/1.5.88.png" /></p>
+<p>در همین دسته تنظیمات وارد بخش Description شوید و توضیحاتی را راجع به سیستم مجازی فراهم آورید تا مورد استفاده ماشین مجازی در تعداد بالای ماشین های مجازی مختلف مشخص باشد :</p>
+<p><img alt="تصویر 1.5.89" src="../images/1.5/1.5.89.png" /></p>
+<p>در دسته تنظیمات System و بخش Motherboard توانایی تنظیمات مختلف سخت افزاری را خواهید داشت؛ از جمله تغییر میزان رم و یا تغییر اولویت راه اندازی و موارد دیگر:</p>
+<p><img alt="تصویر 1.5.90" src="../images/1.5/1.5.90.png" /></p>
+<p>در همین دسته تنظیمات وارد بخش Processor شوید و اگر سخت افزار شما توانایی ارائه تعداد هسته بیشتری را داشت می‌توانید تعداد هسته های CPU مختص به ماشین مجازی را افزایش دهید، توجه کنید که از محدوده سبز رنگ خارج نشوید و سخت افزار را عادلانه بین ماشین مجازی و سیستم واقعی تقسیم کنید:</p>
+<p><img alt="تصویر 1.5.91" src="../images/1.5/1.5.91.png" /></p>
+<p><img alt="تصویر 1.5.92" src="../images/1.5/1.5.92.png" /></p>
+<p>در دسته تنظیمات Storage توانایی مدیریت کنترل کننده های(Controllers) دیسک را دارید ؛ می‌توانید دیسک های نوری مختلف را افزوده و یا حذف کنید؛ همچنین می‌توانید از چندین دیسک مجازی مختلف بهره ببرید و با افزودن آنها در سیستم مجازی از آن بهره ببرید:</p>
+<p><img alt="تصویر 1.5.93" src="../images/1.5/1.5.93.png" /></p>
+<p>در دسته تنظیمات Audio قابلیت کنترل سرویس ها و خروجی و ورودی صدای سیستم مجازی را خواهید داشت:</p>
+<p><img alt="تصویر 1.5.94" src="../images/1.5/1.5.94.png" /></p>
+<p>یا حتی می‌توانید کاملاً عملکرد صدا را در ماشین مجازی غیر فعال کنید:</p>
+<p><img alt="تصویر 1.5.95" src="../images/1.5/1.5.95.png" /></p>
+<p>در دسته تنظیمات Network توانایی افزودن تو تنظیم آداپتور های شبکه را دارید که در حال حاضر تنظیمات پیشفرض برای استفاده ما کافیست:</p>
+<p><img alt="تصویر 1.5.96" src="../images/1.5/1.5.96.png" /></p>
+<p>در دسته تنظیمات Serial Ports توانایی افزودن پورت های سریال مختلف را دارید؛ اگر قصد استفاده از پرینتر یا سخت افزاری که از پورت سریال استفاده می‌کند را در ماشین مجازی دارید نیاز به تنظیم این قسمت خواهید داشت:</p>
+<p><img alt="تصویر 1.5.97" src="../images/1.5/1.5.97.png" /></p>
+<p>در دسته تنظیمات USB می‌توانید متناسب با نوع USB که سخت افزار اصلی شما ارائه داده یک نوع USB را برای ماشین مجازی انتخاب کنید و با اتصال مدیا از پورت USB درون ماشین مجازی خود استفاده کنید:</p>
+<p><img alt="تصویر 1.5.98" src="../images/1.5/1.5.98.png" /></p>
+<p>در دسته تنظیمات Shared Folders میتوانید مسیر های مختلف را برای اشتراک فایل بین ماشین مجازی و سیستم میزبان فراهم کنید تا برای انتقال فایل های سنگین و موارد دیگر از آنها بهره ببرید:</p>
+<p><img alt="تصویر 1.5.99" src="../images/1.5/1.5.99.png" /></p>
+<p><img alt="تصویر 1.5.100" src="../images/1.5/1.5.100.png" /></p>
+<p><img alt="تصویر 1.5.101" src="../images/1.5/1.5.101.png" /></p>
+<p>قابلیت Read-only بدین معناست که کاربر در ماشین مجازی توانایی تغییر فایل های مسیر اشتراکی را ندارد و فقط دسترسی خواندن آنها برای آن مهیا شده؛ قابلیت Auto-mount هم برای سوار کردن مسیر مورد نظر به صورت خودکار در ماشین مجازی است:</p>
+<p><img alt="تصویر 1.5.102" src="../images/1.5/1.5.102.png" /></p>
+<p>می‌بینید که با موفقیت اضافه شد و توانایی افزودن مسیر های متفاوت دیگر را نیز دارید:</p>
+<p><img alt="تصویر 1.5.103" src="../images/1.5/1.5.103.png" /></p>
+<p>در دسته تنظیمات User Interface توانایی تغییر ظاهر محیط VirtualBox برای ماشین مجازی را دارید :</p>
+<p><img alt="تصویر 1.5.104" src="../images/1.5/1.5.104.png" /></p>
+<p>با ذخیره تنظیمات می‌بینید که در بخش اطلاعات سیستم مجازی تغییرات مختلف ایجاد شده :</p>
+<p><img alt="تصویر 1.5.105" src="../images/1.5/1.5.105.png" /></p>
+<p>سیستم مجازی را راه اندازی کرده و خط فرمان را (با جست و جو در نرم افزار ها یا فشردن کلید های ترکیبی Ctrl+Alt+t اجرا کنید) و با اجرای دستوری</p>
+<div dir="ltr">
+    <code>sudo -s</code>
+</div>
+
+<p>و وارد نمودن رمز عبور خود دسترسی پوسته را به کاربر ریشه تغییر دهید؛ سپس با اجرای دستور</p>
+<div dir="ltr">
+    <code>usermod -a -G vboxsf USER_NAME</code>
+</div>
+
+<blockquote>
+<p>به جای USER_NAME ؛ نام کاربری خود را وارد کنید! در مراحل نصب دیدید که من نام کاربری virtualdemon را برای سیستم مجازی انتخاب کردم!</p>
+</blockquote>
+<p>کاربر خود را به گروه vboxsf برای بهره بردن از قابلیت های تنظیم شده مانند مسیر اشتراکی، اضافه کنید:</p>
+<p><img alt="تصویر 1.5.106" src="../images/1.5/1.5.106.png" /></p>
+<blockquote>
+<p>سیستم را پس از افزودن کاربر به گروه،‌ reboot کنید تا تغییرات اعمال شوند.</p>
+</blockquote>
+<p>پس از اعمال فوق توانایی تعامل بهتری با سیستم مجازی خود را خواهید داشت ؛ از جمله:</p>
+<ul>
+<li>می‌توانید با گرفتن و کشیدن فایل از سیستم عامل میزبان به سیستم عامل مجازی و یا بالعکس فایل را انتقال دهید:</li>
+</ul>
+<p><img alt="تصویر 1.5.107" src="../images/1.5/1.5.107.png" /></p>
+<ul>
+<li>می‌توانید متن را از سیستم عامل اصلی به سیستم عامل مجازی و یا بالعکس copy و paste کنید:</li>
+</ul>
+<p><img alt="تصویر 1.5.108" src="../images/1.5/1.5.108.png" /></p>
+<ul>
+<li>می‌توانید از فایل های درون مسیر اشتراکی تعیین شده بهره ببرید و فایل ها را بین سیستم عامل اصلی و مجازی و بالعکس به اشتراک بگذارید:</li>
+</ul>
+<p><img alt="تصویر 1.5.109" src="../images/1.5/1.5.109.png" /></p>
+<p>برای تنظیم سریع سیستم مجازی میتوانید از menu bar فراهم شده توسط VirtualBox بهره ببرید:</p>
+<p><img alt="تصویر 1.5.110" src="../images/1.5/1.5.110.png" /></p>
+<p>در نهایت به کمک مجازی ساز VirtualBox میتوانید یک سیستم واقعی را با قابلیت های مختلف و عملکرد های متناسب، مجازی سازی کنید! این عمل به شما در امر یادگیری بسیار کمک می‌کند. زیرا توانایی تست سیستم عامل های مختلف، تنظیمات سخت افزاری متفاوت، گرفتن Clone از سیستم عامل را خواهید داشت و عمل کرد های متفاوت و کامل دیگر که این نرم افزار در اختیار شما قرار می‌دهد.</p>
+<blockquote>
+<p>با گرفتن clone از سیستم مجازی سازی شده می‌توانید تغییرات اعمال شده تا آن مرحله را کپی کنید و به عنوان پشتیبان و یا تست های مختلف استفاده کنید.</p>
+</blockquote>
+<p>به هر حال دنیایی از قابلیت ها برای شناخت بهتر یک سیستم واقعی و یادگیری لینوکس برای شما توسط VirtualBox فراهم می‌شود.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u06a9\u067e\u06cc \u0634\u062f", "clipboard.copy": "\u06a9\u067e\u06cc \u06a9\u0631\u062f\u0646", "search.result.more.one": "1 \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.more.other": "# \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.none": "\u0633\u0646\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f", "search.result.one": "1 \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.other": "# \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.placeholder": "\u0628\u0631\u0627\u06cc \u0634\u0631\u0648\u0639 \u062c\u0633\u062a\u062c\u0648 \u062a\u0627\u06cc\u067e \u06a9\u0646\u06cc\u062f", "search.result.term.missing": "\u0645\u0648\u062c\u0648\u062f \u0646\u06cc\u0633\u062a", "select.version": "\u0627\u0646\u062a\u062e\u0627\u0628 \u0648\u06cc\u0631\u0627\u06cc\u0634"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

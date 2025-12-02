@@ -1,0 +1,887 @@
+
+<!doctype html>
+<html lang="fa" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../docs/images/index/book_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>P5 - ملزومات لینوکس</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vazirmatn:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Vazirmatn";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+
+<link href="../../../fonts/vazirmatn.css" rel="stylesheet" />
+<style>
+  body {
+    font-family: "Vazirmatn" !important;
+  }
+</style>
+
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="rtl" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          پرش به محتویات
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="سرتیتر">
+    <a href="../../.." title="ملزومات لینوکس" class="md-header__button md-logo" aria-label="ملزومات لینوکس" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ملزومات لینوکس
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              P5
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="هدایت" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ملزومات لینوکس" class="md-nav__button md-logo" aria-label="ملزومات لینوکس" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    ملزومات لینوکس
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    عنوان
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    محتوا
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../preface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    مقدمه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../help_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    مشارکت در نوشتن کتاب
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter1/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱ - انتخاب یک سیستم عامل
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۲ - درک مجوز نرم افزاری
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۳ - بررسی اصول و فلسفه لینوکس
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter4/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۴ - استفاده از ابزار های رایج لینوکس
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter5/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۵ - مدیریت سخت افزار
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter6/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۶ - آشنایی با خط فرمان
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter7/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۷ - مدیریت فایل ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter8/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۸ - جستجو، استخراج، و آرشیو کردن داده ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter9/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۹ - کنکاش پردازش ها و پردازش داده ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter10/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۰ - ویرایش فایل ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter11/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۱ - ساخت اسکریپت
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter12/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۲ - فهم مقدماتی امنیت
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter13/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۳ - ساخت کاربر و گروه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter14/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۴ - تنظیم مالکیت و دسترسی ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter15/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۵ - مدیریت اتصالات شبکه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    واژه نامه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        استفاده از مجوز های متن باز
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="استفاده از مجوز های متن باز">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        درک مجوزهای متن باز
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        درک مدلهای تجاری منبع باز
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>P5</h1>
+
+<h2 id="_1">استفاده از مجوز های متن باز</h2>
+<p>به عنوان یک کاربر عادی، شاید لازم نباشد که بیش از حد به جزئیات مجوز متن باز توجه داشته باشید. اصول OSI و چهارچوب های آن تضمین می‌کند که شما حق دارید از برنامه های متن باز به صورت دلخواه استفاده کنید، حتی می‌توانید آن نرم افزار را مجدداً منتشر نمایید.  اما اگر در حال ایجاد یک تجارت مبتنی بر ایجاد یا توزیع دوباره نرم افزار متن باز هستید ملزم به شناخت بهتر مجوزهای دنیای نرم افزار متن باز و آزاد خواهید بود. بنابر این برخی از این مجوزها با جزئیات بیشتری توضیح داده می‌شود.</p>
+<p>همچنین به بررسی راه هایی که شرکت ها در استفاده از مجوز متن باز به عنوان بخشی از مدلهای تجاری خود پیدا کرده اند؛ خواهیم پرداخت.</p>
+<h3 id="_2">درک مجوزهای متن باز</h3>
+<p>هر مجوز متن بازی دارای مشخصات منحصر به فرد خودش است. این موارد بیشتر مورد توجه برنامه نویسان هنگامی که قصد مشارکت در یک پروژه نرم افزاری را داشته باشند قرار می‌گیرند، اما در هر صورت برای یک مدیر سیستم این موارد الزاماً باید مورد بررسی قرار بگیرند. مجوز های رایج دنیای متن باز شامل موارد زیر می‌شوند:</p>
+<p><strong>مجوزی های GNU GPL و LGPL</strong></p>
+<p>همانطور که قبلاً اشاره شد، هسته لینوکس از GPLv2 استفاده می‌کند، تعداد زیادی از ابزار های لینوکس نیز تحت این مجوز منتشر می‌شوند(یا نسخه ۲، یا نسخه ۳). تعداد زیادی از کتابخانه های نرم افزاری لینوکس نیز تحت مجوز LGPL منتشر می‌شوند.</p>
+<p><strong>مجوز BSD</strong></p>
+<p>مجوز BSD توسط سیستم عامل های متن باز BSD و تعداد زیادی از شاخه های پا گرفته از آنها مورد استفاده قرار می‌گیرد. برخلاف GPL مجوز BSD اجازه تغییر و انتشار دوباره نرم افزار را تحت مجوز دیگری می‌دهد. دو یا سه بند از آخرین نسخه های مجوز BSD در اختصار متشابه با مجوز MIT می‌باشد.</p>
+<p><strong>مجوز MIT</strong></p>
+<p>انستیتوی فناوری ماساچوست(MIT) قدرت اصلی و محرک پشت X Window System (به اختصار X) و مجوز MIT بوده است؛ مجوز MIT (که گاها به آن مجوز X11 نیز می‌گویند) همچنان برای Xorg-X11 استفاده می‌شود.(اجزای X که در اکثر توزیع های لینوکس به کار برده می‌شود.) مجوز MIT به صورت غیرمعمولی کوتاه است.</p>
+<p><strong>مجوز Apache</strong></p>
+<p>همانند مجوز های BSD و MIT، مجوز Apache یک مجوز متن باز است که اجازه تغییرات و انتشار دوباره برنامه را تحت مجوز مشابه یا متفاوتی می‌دهد. اگر یک فایل متنی به نام NOTICE همراه با کار اصلی ارائه شود، می‌بایست در هر امر پاگرفته از نرم افزار اعمال شود. این مورد به توسعه دهنده اصلی این امکان را می‌دهد تا حتی با استفاده از نسخه های به شدت اصلاح شده برنامه، راه ارتباطی و یا موارد دیگر را در اختیار شما قرار دهد.</p>
+<p><strong>مجوز Artistic</strong></p>
+<p>مجوز Artistic در ابتدا برای زبان برنامه نویسی Perl تهیه شده بود، اما توسط سایر نرم افزار ها مورد استفاده قرار گرفت. این مجوز پر از شرایط است و به همین دلیل دارای ملزومات و نقاط ضعف زیادی می‌باشد. اکثر نرم افزارهایی که از مجوز Artistic استفاده می‌کنند با تصریح این که مجوز اختیاری است منتشر می‌شوند. کاربر ممکن است در عوض شرایط برخی مجوزهای دیگر(معمولا GPL) را دنبال می‌کند.</p>
+<p>جزئیات مجوزهای منبع باز احتمالاً برای بیشتر مدیران سیستم از اهمیت خاصی برخوردار نیستند. شما می‌توانید هر نرم افزار متن باز را طبق دلخواه خودتان استفاده و تغییر دهید و دوباره منتشر کنید. البته اگر یک برنامه را تغییر دادید، باید از الزامات برای توزیع مجدد نرم افزار آگاه باشید، به ویژه اگر می‌خواهید دو یا چند برنامه را ادغام کنید یا یک نرم افزار را پس از تغییرات تحت مجوز دیگری دوباره منتشر کنید. همچنین باید توجه داشته باشید که برخی توزیع های لینوکس ممکن است شامل نرم افزارهایی باشند که نرم افزار متن باز تلقی نشوند. برخی از این نرم افزارها تجاری هستند و سایر این نرم افزارها در دسته بندی های مختلف دیگری قرار می‌گیرند.</p>
+<p>یک نگرانی اساسی هنگام توصیف مجوزهای نرم افزاری، مجوز برای کل لینوکس است! اگر شما یک تصویر (فایل image فایلی است که بر روی مدیا برای نصب و استفاده راه اندازی می‌شود.) سیستم عامل گنو/لینوکس را بارگیری کنید، این مجموعه سیستم عامل از مجوز های متنوعی در حال استفاده است(مجوز هایی مثل GPL و BSD و MIT و ...). بیشتر این مجوزها متن باز هستند اما برخی از نرم افزارهای این مجموعه تحت مجوز های متن باز فراهم نمی‌شوند. بسیاری از توزیع ها با تعداد کمی از <a href="https://fa.wikipedia.org/wiki/%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1_%D9%85%D8%B4%D8%B1%D9%88%D8%B7">shareware</a> ها و یا بسته های "نه-کاملاً-آزاد" منتشر می‌شوند مثل shareware گرافیکی <a href="http://www.trilon.com/xv/">XV</a> که یک برنامه برای تغییر تصاویر به صورت تعاملی برای X window system می‌باشد. حتی برخی اوقات ممکن است بسته های جزئی شامل نرم افزارهای کاملاً تجاری باشند. به همین دلیل می‌بایست قبل از کپی کردن بسته های مختلف بهتر است درمورد مجوزهای نرم افزاری آنها تحقیق شده و به یقین رسید که کپی کردن بسته مشکلی ندارد. البته اگر گردآورنده توزیع لینک های بارگیری را به صورت رایگان قرار دهد در نتیجه کپی کردن احتمالاً مجاز است.</p>
+<p>توزیع های لینوکس شامل برنامه های نصب، برنامه های پیکربندی و موارد مشابه می‌شوند. این ابزارها معمولاً مواردی هستند که گردآورنده توزیع می‌تواند در ازای آنها ادعای کپی‌رایت داشته باشد. اکثر نگهدارندگان توزیع، روال نصب و پیکربندی را تحت مجوز GPL یا مجوز منبع آزاد دیگر در دسترس قرار داده اند، اما در همه موارد به این صورت نیست. چنین جزئیاتی می‌تواند آنچه که ممکن است سیستم عامل منبع باز تلقی شود به چیزی که کاملاً متن باز نیست تبدیل شود. دبیان خط مشی استفاده از نرم افزارهای متن باز را فقط در مجموعه اصلی خود تنظیم می‌کند، اگرچه همچنان اجازه میدهد برنامه های منبع باز را به صورت آزادانه توزیع کند، اما نرم افزار هایی که شامل فلسفه آزاد بودن نرم افزار نیستند را در مجموعه بسته های "غیر آزاد(non-free)" خود قرار می‌دهد.</p>
+<p>از آنجا که توزیع کامل لینوکس از مؤلفه های مختلف و با استفاده از مجوزهای گسترده ای تشکیل شده است، صحبت کردن درباره حق چاپ یا مجوز واحد برای کل سیستم عامل بیهوده است. در عوض شما باید به توزیع لینوکس به عنوان مجموعه محصولاتی که به صورت یک ابزار یکپارچه کنار هم چیده شده اند نگاه کنید. البته اکثر نرم افزار های این مجموعه از مجوز های متن باز استفاده می‌کنند.</p>
+<h3 id="_3">درک مدلهای تجاری منبع باز</h3>
+<p>برخی توزیع های لینوکس مانند Debian توسط داوطلبان یا سازمان های غیر انتفاعی نگهداری می‌شوند. سایر توزیع ها مانند RHEL توسط شرکتی که انتظار سودآوری را دارد نگهداری می‌شوند. اما یک شرکت که محصول خود را به صورت رایگان در فضای اینترنت قابل ارائه می‌کند چگونه می‌تواند سودآوری داشته باشد؟ چندین روش برای کسب درآمد برای از نرم افزار متن باز وجود دارد، از جمله موارد زیر:</p>
+<p><strong>خدمات و پشتیبانی</strong></p>
+<p>خود محصول می‌تواند متن باز باشد و حتی به صورت رایگان نیز مورد استفاده قرار گیرد، در این حال شرکت می‌تواند آموزش و پشتیبانی نرم افزار را با قیمت تعیین شده ارائه دهد. به عنوان مثال، یک بازی ممکن است منبع باز باشد، اما برای ارائه مجموعه ای کامل از ویژگی ها، نیاز به خرید اشتراک در یک سرویس آنلاین داشته باشد.</p>
+<p><strong>مجوز دوگانه</strong></p>
+<p>شرکت می‌تواند دو نسخه از محصول را ایجاد کند: یک نسخه کاملاً متن باز است و دیگری قابلیت هایی را در خود دارد که در نسخه منبع آزاد در دسترس نیست. نسخه متن باز نرم افزار همانند نمونه های تستی که بعنوان مثال اغلب در سوپر مارکت ها ارائه می‌کنند می‌باشد(راهی برای جذب مشتری).نسخه متن باز نرم افزار یک نمونه تستی برای دیدن قابلیت هاست! اما shareware نمی‌باشند چرا که به مدت نامحدود می‌توانید از آنها استفاده کنید و اغلب با صفتی مثل Community Edition ارائه می‌شوند ابزار <a href="https://www.jetbrains.com/pycharm/download/#section=linux">PyCharm</a> یکی از این نمونه هاست.</p>
+<p><strong>محصولات چندگانه</strong></p>
+<p>محصول متن باز ممکن است تنها یک پیشنهاد از شرکت باشد که درآمد آن توسط سایر خطوط تولید حاصل شود. این خطوط تولید دیگر می‌تواند یک نرم افزار دیگر یا محصول دیگری مانند راهنمای کاربری باشد.</p>
+<p><strong>درایور های متن باز</strong></p>
+<p>مورد خاص "محصولات چندگانه" فروشندگان سخت افزار است. آنها ممکن است تصمیم بگیرند که درایورها یا حتی برنامه های خاص سخت افزاری را به عنوان منبع باز به عنوان راهی برای ارتقاء سخت افزار خود منتشر کنند.</p>
+<blockquote>
+<p>هنگامی که یک فروشنده سخت افزار، یک درایور متن باز را منتشر می‌کند، در واقع این کد منتشر شده اطلاعات برنامه نویسی در باره سخت افزار فروشنده را نشان می‌دهد. بنابراین برخی از فروشندگان تمایلی به انتشار درایور های متن باز را ندارند.</p>
+</blockquote>
+<p><strong>پاداش</strong></p>
+<p>"جایزه بگیری" یک روش جمع آوری کمک مالی است. کاربران می‌توانند با ارائه هزینه پرداخت برای نسخه جدید نرم افزار و یا ویژگی جدید درون نرم افزار، ایجاد یک نرم افزار منبع باز را هدایت کنند. سایت هایی مانند<a href="http://www.fossfactory.org/">FOSS Factory</a> یا <a href="https://www.bountysource.com/">Bountysource</a> می‌توانند به جمع آوری کمک کاربران که ممکن است به تنهایی قادر به ارائه پول کافی برای ایجاد انگیزه در توسعه نباشند برای جذب برنامه نویسان در جهت نوشتن کد مطلوب کمک کنند. در این روش، اولین برنامه نویسی که در ابتدا پروژه را تکمیل می‌کند، می‌تواند وجوه سرمایه گذاری شده روی پروژه را کسب کند.</p>
+<p><strong>کمکهای مالی</strong></p>
+<p>بسیاری از پروژه های متن باز کمک های مالی را برای کمک به توسعه می‌پذیرند. اگرچه این به معنای معمول یک الگوی بودجه تجاری نیست، اما به بودجه عملکرد سازمان هایی مانند FSF کمک می‌کند.</p>
+<p>البته فراتر از این فرصت های تجاری، بخش بزرگی از نرم افزار های منبع باز در آکادمی ها، توسط دولت ها، سازمان های غیرانتفاعی، و حتی گاهاً در جهت سرگرمی برنامه نویس(Linux : Just for Fun) ساخته می‌شوند. حتی شرکت هایی که از یک نرم افزار متن باز استفاده می‌کنند تغییرات خود را برای اعمال توسط سازنده آن ارسال می‌کنند زیرا نگه داشتن تغییرات درون نسخه دوباره منتشر شده آنها باعث ایجاد کار بیشتر می‌شود و اگر تغییرات داخلی به نویسنده اصلی بازگردانده نشود باید با هر نسخه جدید(که توسط توسعه دهنده اصلی ارائه می‌شود) کد را باز نویسی کرد. بعنوان مثال می‌توان به کمک در توسعه لینوکس توسط کمپانی های مختلف اشاره کرد که برای مشاهده جزئیات بیشتر میتوانید به <a href="https://www.linuxfoundation.org/blog/2016/08/the-top-10-developers-and-companies-contributing-to-the-linux-kernel-in-2015-2016/">این صفحه</a> مراجعه کنید.</p>
+<blockquote>
+<p>ملزومات و فراتر از آن</p>
+<p>تعیین مجوز برای نرم افزار می‌تواند دچار پیچیدگی شود، این موضوعی است که به ندرت نظر افراد اهل فن را جذب خود می‌کند. با این وجود، شرایط مجوز می‌تواند بر عملکرد جامعه نرم افزار به عنوان یک کل تاثیر بگذارد و در نتیجه نرم افزار با گذشت زمان تکامل یابد. لینوکس بر تعداد معدودی از مجوز های متن باز حاکم است، و اجازه میدهد(و گاهی اوقات مجبور می‌کند) که تغییرات ایجاد شده در نرم افزار آزاد باشند. چنین مجوزهایی به طور معمول محدودیت هایی را درمورد نحوه استفاده از نرم افزار اعمال می‌کنند. در واقع این عمل در تضاد با مجوزهای انحصاری است که غالباً محدودیت هارا تشدید می‌بخشند. سازمان هایی مانند OSI , FSF و Creative Commons مجوزهای متن باز را ارتقاء می‌دهند. OSI به صورت ویژه ای تلاش می‌کند تا مشاغل را متقاعد کند که مجوز های منبع آزاد را اتخاذ کنند و از مدلهای تجاری که از متن باز به عنوان راهی برای تولید درآمد استفاده می‌کنند، حمایت می‌کنند.</p>
+<blockquote>
+<p>تمرینات پیشنهادی</p>
+<p>در مورد مجوز های GPLv3, GPLv2 و BSD جستجو کنید و متن این مجوز ها را بخوانید و با یکدیگر مقایسه کنید. در صورت نوشتن یک برنامه متن باز، کدام یک از این مجوز ها را استفاده خواهید کرد؟</p>
+<p><a href="https://opensource.org/about">بیانیه ماموریت OSI</a>  و بخش Our Core Work <a href="https://www.fsf.org/about">بنیاد نرم افزار آزاد</a> را بخوانید.</p>
+</blockquote>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u06a9\u067e\u06cc \u0634\u062f", "clipboard.copy": "\u06a9\u067e\u06cc \u06a9\u0631\u062f\u0646", "search.result.more.one": "1 \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.more.other": "# \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.none": "\u0633\u0646\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f", "search.result.one": "1 \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.other": "# \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.placeholder": "\u0628\u0631\u0627\u06cc \u0634\u0631\u0648\u0639 \u062c\u0633\u062a\u062c\u0648 \u062a\u0627\u06cc\u067e \u06a9\u0646\u06cc\u062f", "search.result.term.missing": "\u0645\u0648\u062c\u0648\u062f \u0646\u06cc\u0633\u062a", "select.version": "\u0627\u0646\u062a\u062e\u0627\u0628 \u0648\u06cc\u0631\u0627\u06cc\u0634"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,904 @@
+
+<!doctype html>
+<html lang="fa" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../docs/images/index/book_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>P3 - ملزومات لینوکس</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vazirmatn:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Vazirmatn";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+
+<link href="../../../fonts/vazirmatn.css" rel="stylesheet" />
+<style>
+  body {
+    font-family: "Vazirmatn" !important;
+  }
+</style>
+
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="rtl" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#osi" class="md-skip">
+          پرش به محتویات
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="سرتیتر">
+    <a href="../../.." title="ملزومات لینوکس" class="md-header__button md-logo" aria-label="ملزومات لینوکس" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ملزومات لینوکس
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              P3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="هدایت" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ملزومات لینوکس" class="md-nav__button md-logo" aria-label="ملزومات لینوکس" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    ملزومات لینوکس
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    عنوان
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    محتوا
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../preface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    مقدمه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../help_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    مشارکت در نوشتن کتاب
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter1/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱ - انتخاب یک سیستم عامل
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۲ - درک مجوز نرم افزاری
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۳ - بررسی اصول و فلسفه لینوکس
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter4/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۴ - استفاده از ابزار های رایج لینوکس
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter5/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۵ - مدیریت سخت افزار
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter6/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۶ - آشنایی با خط فرمان
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter7/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۷ - مدیریت فایل ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter8/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۸ - جستجو، استخراج، و آرشیو کردن داده ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter9/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۹ - کنکاش پردازش ها و پردازش داده ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter10/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۰ - ویرایش فایل ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter11/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۱ - ساخت اسکریپت
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter12/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۲ - فهم مقدماتی امنیت
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter13/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۳ - ساخت کاربر و گروه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter14/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۴ - تنظیم مالکیت و دسترسی ها
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter15/contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    فصل ۱۵ - مدیریت اتصالات شبکه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    واژه نامه
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#osi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        سازمان پیشگامان متن باز (OSI)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="سازمان پیشگامان متن باز (OSI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        درک فلسفه متن باز
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        تعریف نرم افزار متن باز
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>P3</h1>
+
+<h2 id="osi">سازمان پیشگامان متن باز (OSI)</h2>
+<p>اشخاص Bruce Perens و Eric S. Raymond در سال 1988 سازمان Open Source Initiative یا OSI را بعنوان یک سازمان اصلی (Umbrella organization) برای نرم افزارهای متن باز تاسیس کردند.</p>
+<blockquote>
+<p>Umbrella Organization به شرکتی گفته می‌شود که وظیفه سازماندهی و مدیریت سیار زیرمجموعه های مرتبط با خود را دارد.</p>
+</blockquote>
+<p>فلسفه این سازمان در جزئیات مهم با FSF تفاوت دارد هرچند که به صورت کلی مشابه با یکدیگر هستند. به عنوان یک قاعده کلی، در روش بیان بنیاد نرم افزار آزاد مشخص می‌شود که نرم افزار آزاد با نرم افزار متن باز تفاوت هایی دارد  و آنچه بعنوان نرم افزار متن باز شناخته می‌شود به تعبیر دقیق OSI بستگی دارد که از نظر مجوز های آن تایید شده باشد.</p>
+<h3 id="_1">درک فلسفه متن باز</h3>
+<p>در دهه های 1980 و 1990 ، جنبش نرم افزار آزاد در محافل خاص ، از جمله دانشگاه ها و در بین سرگرمی ها ، شتاب بیشتری به خود گرفت. با این حال، مشاغل نسبت به اتخاذ نرم افزار آزاد به صورت آهسته پیش می‌رفتند. بسیاری از اشخاص با اکراه و یا به اجبار استفاده از نرم افزار متن باز را پذیرفتند، مانند مدیران سیستمی که به خاطر بودجه کم مجبور به استفاده از لینوکس و ابزارهای Apache, Samba و  سایر نرم افزارهای متن بازِ مشابهِ گزینه های گران قیمت تجاری شدند.</p>
+<p>تلاش های FSF در طرفداری از نرم افزار آزاد بر پایه یک سری ضرورت اخلاقی محکم بوده است و از نظر FSF نرم افزار باید ٬آزاد٬ باشد!(که قبلاً در مورد این آزادی نرم افزار توضیح داده‌ایم.) این رویکرد برای برخی افراد جذاب است اما برای برخی دیگر،‌به خصوص مشاغلی که با فروش نرم افزار کسب درآمد دارند، در بهترین حالت ٬عجیب٬ و در بهترین حالت ٬تهدید٬ محسوب می‌شود.</p>
+<p>به همین دلایل، سازندگان OSI سازمان خود را به عنوان راهی برای دفاع از نرم افزار آزاد طراحی کردند. OSI با استفاده از اصطلاح جدید ٬متن باز٬‌ و با نرم کردن برخی از ضروریات اخلاقی FSF، قصد دارد که نرم افزار متن باز را در جهان تجارت وارد کند. تفاوت این ضرورت اخلاقی FSF را می‌توان در بیانیه های ماموریتی وب سایت <a href="https://opensource.org/">OSI</a> مشاهده کرد:</p>
+<blockquote>
+<p><strong>متن باز</strong></p>
+<p>متن باز شیوه جدیدی برای  توسعه(نرم افزار) می باشد که از قدرت بازبینی اشتراکی و شفافیت کار بهره مند است. وعده متن باز کیفیت بهتر، قابلیت اطمینان بالاتر، انعطاف پذیری بیشتر، هزینه کمتر و پایانی برای قفل فروش فروشنده درنده است.</p>
+</blockquote>
+<p>بزرگترین تفاوت فلسفی بین FSF و OSI در الزام GPL منعکس شده است که آثار مشتق شده از نرم افزار تحت GPL باید دوباره با این مجوز منتشر شوند. OSI دارای مجوزهای زیادی برای نرم افزارهای متن باز،‌ از جمله GPL، را دارد؛ هرچند بسیاری از این مجوزها محدودیت های مشابهی ندارند. در گذشته نرم افزاری که تحت چنین مجوزهایی منتشر شد در نهایت به سمت محصولات متن/منبع بسته(closed-source) راه پیدا کرد. OSI به چنین مسیری اعتراض نمی‌کند، مشروط بر اینکه این نرم افزار به روشی که اجازه آنا را صادر کرده باشد مجوز بگیرد.  از طرف دیگر، FSF صریحاً چنین روش تغییر مجوزی را در GPL ممنوع اعلام کرده است.</p>
+<p>به عنوان یک قاعده کلی، نرم افزار آزاد به تعبیر FSF یک نرم افزار متن باز هم هست! اگرچه برخی مجوزهایی که FSF آن را آزاد می‌شناسد، توسط OSI تایید نشده اند. اگرچه بسیاری از مجوزهای متن باز نیز از نظر FSF آزاد نیستند. شکل ۲.۱ این رابطه را بهتر نمایش می‌دهد:</p>
+<p><img alt="تصویر ۲.۱ : رابطه نرم افزار آزاد با نرم افزار متن باز" src="../images/2.3/opensource_vs_free_software.png" /></p>
+<p>تصویر ۲.۱ : بیشتر نرم افزارهای آزاد متن باز هستند اما مقدار قابل توجهی از نرم افزارهای متن باز آزاد نیستند.</p>
+<p>امروزه، تنش هایی بین مخلصان راه FSF و نرم افزار آزاد در مقابل جامعه متن باز وجود دارد. با این حال در بیشتر قسمت ها، اهداف مشترکی را دنبال می‌کنند که به اندازه کافی مشابه هستند تا تفاوت بین آنها را به کمتر از حداقل می‌رساند. در حقیقت، دو اصطلاح نرم افزار متن باز و آزاد(FOSS) و نرم افزار آزاد خالص(FLOSS) گاهاً به عنوان اصطلاحات چتری مورد استفاده قرار می‌گیرند تا صریحاً به هر دو نوع نرم افزار و روش توسعه اشاره شود.</p>
+<div dir="ltr">
+    <blockquote> FOSS : Free OpenSource Software<br>FLOSS : Free/Libre OpenSource Software</blockquote>
+</div>
+
+<h3 id="_2">تعریف نرم افزار متن باز</h3>
+<p>در <a href="https://opensource.org/definition">اینجا</a> نرم افزار متن باز تعریف شده که دارای ۱۰ اصل مشخص می‌باشد ؛ که به صورت خلاصه توضیح می‌دهیم:</p>
+<p><strong>۱. آزاد بودن توزیع دوباره (Free Redistribution)</strong></p>
+<p>مجوز می‌بایست اجازه توزیع مجدد؛ از جمله توزیع مجدد یک نرم افزار را بعنوان بخشی از یک پروژه بزرگتر بدهد.</p>
+<p><strong>۲. در دسترس بودن کد منبع (Source Code)</strong></p>
+<p>صاحب نرم افزار باید کد منبع را در دسترس قرار داده و اجازه توزیع مجدد کد منبع و (در صورت وجود) کد باینری را نیز بدهد.</p>
+<p><strong>۳. اجازه به ادامه فعالیت پروژه های مشتق شده (Derived Works)</strong></p>
+<p>مجوز باید به دیگران اجازه دهد تا نرم افزار را تغییر داده و چنین اصلاحاتی را با همان مجوز اصلی توزیع کنند.</p>
+<p><strong>۴. احترام به یکپارچگی کد منبع (Integrity of The Author's Source Code)</strong></p>
+<p>مجوز ممکن است توزیع مجدد کد منبع اصلاح شده را محدود کند، اما در این شرایط هم توزیع وصله های نرم افزار(patch files) همراه با کد منبع اصلی ممکن است.این چنین مجوزی ممکن است مستلزم این باشد که آثار مشتق شده، نام یا شماره نسخه نرم افزار را تغییر دهد.</p>
+<p><strong>۵. هیچ تبعیضی علیه افراد یا گروه ها وجود ندارد (No Discrimination Against Persons or Groups)</strong></p>
+<p>مجوز نباید بین افراد یا گروه های مختلف تبعیض قائل شود.</p>
+<p><strong>۶. هیچ تبعیضی در زمینه کاربرد نیست (No Discrimination Against Fields of Endeavor)</strong></p>
+<p>مجوز نباید استفاده از برنامه را در زمینه‌ های مختلف، مثلا در تجارت یا استفاده توسط محققان ژنتیک، منع کند.</p>
+<p><strong>۷. توزیع مجوز خودکار (Distribution of License)</strong></p>
+<p>مجوز باید برای هر کسی که برنامه را دریافت می‌کند، بدون نیاز به توافق جداگانه اعمال شود.</p>
+<p><strong>۸. مجوز فقط نباید مختص یک محصول باشد (License Must Not Be Specific to a Product)</strong></p>
+<p>مجوز نباید مستلزم استفاده یا توزیع برنامه به عنوان بخشی از یک برنامه بزرگتر باشد - یعنی شما می‌توانید یک برنامه واحد را از یک مجموعه بزرگتر استخراج کرده و مجدداً توزیع کنید.</p>
+<p><strong>۹. عدم محدودیت در سایر نرم افزارها (License Must Not Restrict Other Software)</strong></p>
+<p>مجوز نباید محدودیت هایی را برای سایر نرم افزارهایی که به همراه آن ارائه میشوند اعمال کند.</p>
+<p><strong>۱۰. خنثی بودن تکنولوژی (License Must Be Technology-Neutral)</strong></p>
+<p>مجوز نباید بر اساس فن آوری های خاص یا رابط ها محدود شود.</p>
+<p>سه مورد اول این اصول، حداقل از نظر درک نقطه نظر منبع باز، بسیار مهم هستند. این مجموعه به صورت کلی شباهت کاملی با چهار اصل بنیاد نرم افزار آزاد دارد و شرح مفاهیم آن در صحفه وب <a href="https://www.gnu.org/philosophy/free-sw.html">FSF</a> موجود است. با این حال، همانطور که قبلاً توضیح داده شد، به ویژه در مورد الزامات صدور مجوز برای کارهای مشتق شده تفاوت هایی وجود دارد.</p>
+<blockquote>
+<p>توجه کنید که تعریف نرم افزار آزاد توسط OSI برگرفته از خطوط راهنمای نرم افزار آزاد دبیان (DFSG) است.</p>
+</blockquote>
+<p>در نهایت در سال ۲۰۲۰ <a href="https://opensource.org/licenses">مجوز های محبوب تایید شده توسط OSI</a> شامل موارد زیر است :</p>
+<div dir="ltr">
+<ul>
+    <li><a href="https://opensource.org/licenses/Apache-2.0">Apache License 2.0</a></li>
+    <li><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause "New" or "Revised" license</a></li>
+    <li><a href="https://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause "Simplified" or "FreeBSD" license</a></li>
+    <li><a href="https://opensource.org/licenses/gpl-license">GNU General Public License (GPL)</a></li>
+    <li><a href="https://opensource.org/licenses/lgpl-license">GNU Library or "Lesser" General Public License (LGPL)</a></li>
+    <li><a href="https://opensource.org/licenses/MIT">MIT license</a></li>
+    <li><a href="https://opensource.org/licenses/MPL-2.0">Mozilla Public License 2.0</a></li>
+    <li><a href="https://opensource.org/licenses/EPL-2.0">Eclipse Public License 2.0</a></li>
+    <li><a href="https://opensource.org/licenses/CDDL-1.0">Common Development and Distribution License</a></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u06a9\u067e\u06cc \u0634\u062f", "clipboard.copy": "\u06a9\u067e\u06cc \u06a9\u0631\u062f\u0646", "search.result.more.one": "1 \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.more.other": "# \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.none": "\u0633\u0646\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f", "search.result.one": "1 \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.other": "# \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.placeholder": "\u0628\u0631\u0627\u06cc \u0634\u0631\u0648\u0639 \u062c\u0633\u062a\u062c\u0648 \u062a\u0627\u06cc\u067e \u06a9\u0646\u06cc\u062f", "search.result.term.missing": "\u0645\u0648\u062c\u0648\u062f \u0646\u06cc\u0633\u062a", "select.version": "\u0627\u0646\u062a\u062e\u0627\u0628 \u0648\u06cc\u0631\u0627\u06cc\u0634"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
