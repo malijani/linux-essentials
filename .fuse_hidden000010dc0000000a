@@ -66,6 +66,8 @@ if [ ! -e "site" ]; then
     exit 1
 fi
 
+find . -type f -name ".fuse*" -print -exec rm -fv {} \;
+
 echo -e "${BOLD}${CYAN}Moving site contents to root...${RESET}"
 mv site/* .
 
