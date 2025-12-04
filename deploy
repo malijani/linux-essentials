@@ -16,6 +16,16 @@ if [[ -n $(git status --porcelain) ]]; then
     exit 1
 fi
 
+COMMIT=$(git rev-parse --short HEAD)
+PREV_COMMIT=$(git rev-parse --short HEAD~1)
+
+REPO_URL=$(git config --get remote.origin.url \
+  | sed -e 's/git@github.com:/https:\/\/github.com\//' \
+        -e 's/\.git$//')
+
+COMMIT_URL="${REPO_URL}/commit/${COMMIT}"
+COMPARE_URL="${REPO_URL}/compare/${PREV_COMMIT}...${COMMIT}"
+
 if [ ! -d ".venv" ]; then
     echo -e "${BOLD}${RED}Virtual environment '.venv' not found. Aborting...${RESET}"
     exit 1
@@ -76,16 +86,6 @@ rm -rfv site/ site.zip
 
 echo -e "${BOLD}${CYAN}Adding changes to git...${RESET}"
 git add .
-
-COMMIT=$(git rev-parse --short HEAD)
-PREV_COMMIT=$(git rev-parse --short HEAD~1)
-
-REPO_URL=$(git config --get remote.origin.url \
-  | sed -e 's/git@github.com:/https:\/\/github.com\//' \
-        -e 's/\.git$//')
-
-COMMIT_URL="${REPO_URL}/commit/${COMMIT}"
-COMPARE_URL="${REPO_URL}/compare/${PREV_COMMIT}...${COMMIT}"
 
 echo -e "${BOLD}${CYAN}Committing changes...${RESET}"
 git commit -m "deploy: ${COMMIT}"
