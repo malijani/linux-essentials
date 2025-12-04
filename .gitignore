@@ -2,4 +2,4 @@
 site
 *.pdf
 *.zip
-
+.fuse*
